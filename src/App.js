@@ -1,10 +1,10 @@
 import React from "react";
-import {
+/*import {
     Link,
     Route,
     Switch,
     BrowserRouter as Router,
-} from "react-router-dom";
+} from "react-router-dom";*/
 
 import './App.scss';
 

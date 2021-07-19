@@ -2,7 +2,7 @@ footer {
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 100px;
+    // height: 100px;
     padding: 20px;
     position: fixed;
     color: #FFFFFF;
@@ -19,7 +19,7 @@ footer {
         height: 40px;
     }
 
-    .logo:hover {
+    .logo:hover, logo:focus {
         filter: invert(0.9);
     }
 }

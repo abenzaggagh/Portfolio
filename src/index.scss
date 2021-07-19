@@ -16,6 +16,10 @@ html body {
 	@include background-gradient();
 }
 
+#root {
+	height: 100vh;
+}
+
 @for $i from 0 through 6 {
 	h#{$i} {
 		margin: 0;
