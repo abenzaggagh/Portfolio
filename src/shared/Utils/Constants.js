@@ -8,6 +8,8 @@ export default class Constants {
 
     static OVERLAY = [];
 
+    static GREETINGS = "Hello, I'm Amine!";
+
     static FOOTER = [{
         title: 'GitHub',
         link: 'https://github.com/abenzaggagh',

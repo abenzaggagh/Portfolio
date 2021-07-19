@@ -9,7 +9,7 @@ export default class Footer extends React.Component {
     render() {
         let social = Constants.FOOTER.map(item => 
             (<div className="col">
-                    <a href={item.link} target={item.toNewTab ? "_blank" : ""} >
+                    <a href={item.link} target="_blank" rel="noopener noreferrer">
                         <img className="logo" alt={item.alternative} src={item.image} />
                     </a>
             </div>));
