@@ -1,0 +1,91 @@
+header {
+    top: 0;
+    left: 0;
+    margin: 0;
+    width: 100%;
+    height: 130px;
+}
+
+.icon {
+    top: 0;
+    right: 0;
+    z-index: 2;
+    width: 130px;
+    height: 130px;
+    cursor: pointer;
+    position: fixed;
+    background-color: transparent;
+    transition: background-color 300ms ease;
+}
+
+.icon:before, .icon:after, .icon span {
+    content: "";
+    right: 53px;
+    width: 25px;
+    height: 2px;
+    position: fixed;
+    border-radius: 2px;
+    background-color: #fff;
+    transition: transform 0.3s ease;
+}
+
+.icon:before {
+    top: 58px;
+}
+
+.icon span {
+    top: 65px;
+}
+
+.icon:after {
+    top: 72px;
+}
+
+.icon:hover {
+    background-color: rgba(9, 3, 23, 0.98);
+}
+
+.icon:hover:before {
+    transform: translate3d(-3px, 0, 0);
+}
+
+.icon:hover span {
+    transform: translate3d(3px, 0, 0);
+}
+
+.icon:hover:after {
+    transform: translate3d(-3px, 0, 0);
+}
+
+@media only screen and (max-width: 768px) {
+    header {
+        width: 100%;
+        height: 66px;
+    }
+
+    .icon {
+        width: 66px;
+        height: 66px;
+    }
+
+    .icon:before {
+        top: 26px;
+    }
+
+    .icon:before, .icon:after, .icon span {
+        right: 20px;
+    }
+
+    .icon:before {
+        top: 26px;
+    }
+
+    .icon span {
+        top: 33px;
+    }
+
+    .icon:after {
+        top: 40px;
+    }
+
+}

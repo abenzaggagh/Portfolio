@@ -1,0 +1,24 @@
+// Functions
+
+@function random_range($min, $max) {
+    @return $min + floor(random() * (($max - $min) + 1));
+}
+  
+@function sample($list) {
+    @return nth($list, random(length($list)));
+}
+
+// Mixin
+@mixin background-gradient() {
+	background: -ms-gradient(linear, left top, left bottom, color-stop(0%, $midnightBlue));
+	background: -moz-gradient(linear, left top, left bottom, color-stop(0%, $midnightBlue));
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $midnightBlue));
+}
+
+@mixin center() {    
+    top: 50%;
+    left: 50%;
+    margin: 0;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}

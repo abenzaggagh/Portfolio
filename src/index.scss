@@ -1,0 +1,87 @@
+// Application - Style
+
+// Imports
+@import './assets/styles/Fonts.scss';
+@import './assets/styles/Functions.scss';
+@import './assets/styles/Variables.scss';
+
+// Bootstrap
+@import "~bootstrap/scss/bootstrap";
+
+html body {
+	margin: 0;
+	width: 100%;
+	overflow: hidden;
+	display: inline;
+	@include background-gradient();
+}
+
+@for $i from 0 through 6 {
+	h#{$i} {
+		margin: 0;
+	}
+}
+  
+.bubbles {
+	// bottom: 0;
+	// position: relative;
+}
+
+.bubble {
+	position: absolute;
+	left: var(--bubble-left-offset);
+	bottom: -75%;
+	display: block;
+	width: var(--bubble-radius);
+	height: var(--bubble-radius);
+	border-radius: 50%;
+	animation: float-up var(--bubble-float-duration) var(--bubble-float-delay) ease-in infinite;
+
+	&::before {
+		content: '';
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		background: hsla(183, 93%, 76%, 0.1);
+		border-radius: inherit;
+		animation: var(--bubble-sway-type) var(--bubble-sway-duration) var(--bubble-sway-delay) ease-in-out alternate infinite;
+	}
+
+   	@for $i from 0 through $bubble-count {
+		&:nth-child(#{$i}) {
+			--bubble-left-offset: #{random_range(0vw, 100vw)};
+			--bubble-radius: #{random_range(1vw, 10vw)};
+			--bubble-float-duration: #{random_range(8s, 14s)};
+			--bubble-sway-duration: #{random_range(0s, 8s)};
+			--bubble-float-delay: #{random_range(0s, 8s)};
+			--bubble-sway-delay: #{random_range(0s, 8s)};
+			--bubble-sway-type: #{sample($sway-type)};
+		}
+   	}
+}
+
+@keyframes float-up {
+   	to {
+   		transform: translateY(-175vh);
+   	}
+}	
+
+@keyframes sway-left-to-right {
+	from {
+		transform: translateX(-100%);
+	}
+	to {
+		transform: translateX(100%);
+	}
+}
+
+@keyframes sway-right-to-left {
+	from {
+		transform: translateX(100%);
+	}
+	to {
+		transform: translateX(-100%);
+	}
+}
