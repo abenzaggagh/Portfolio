@@ -11,8 +11,8 @@
 html body {
 	margin: 0;
 	width: 100%;
-	overflow: hidden;
 	display: inline;
+	overflow: hidden;
 	@include background-gradient();
 }
 
@@ -20,15 +20,11 @@ html body {
 	height: 100vh;
 }
 
-@for $i from 0 through 6 {
+@for $i from 1 through 6 {
 	h#{$i} {
-		margin: 0;
+		white-space: nowrap;
+		margin: 30 - ($i * 5px);
 	}
-}
-  
-.bubbles {
-	// bottom: 0;
-	// position: relative;
 }
 
 .bubble {
@@ -57,10 +53,10 @@ html body {
 		&:nth-child(#{$i}) {
 			--bubble-left-offset: #{random_range(0vw, 100vw)};
 			--bubble-radius: #{random_range(1vw, 10vw)};
-			--bubble-float-duration: #{random_range(8s, 14s)};
-			--bubble-sway-duration: #{random_range(0s, 8s)};
-			--bubble-float-delay: #{random_range(0s, 8s)};
-			--bubble-sway-delay: #{random_range(0s, 8s)};
+			--bubble-float-duration: #{random_range(8s, 60s)};
+			--bubble-sway-duration: #{random_range(0s, 10s)};
+			--bubble-float-delay: #{random_range(0s, 1s)};
+			--bubble-sway-delay: #{random_range(0s, 1s)};
 			--bubble-sway-type: #{sample($sway-type)};
 		}
    	}

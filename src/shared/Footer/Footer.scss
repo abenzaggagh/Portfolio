@@ -2,11 +2,9 @@ footer {
     left: 0;
     bottom: 0;
     width: 100%;
-    // height: 100px;
     padding: 20px;
     position: fixed;
     color: #FFFFFF;
-
     text-align: center !important;
     
     a {
@@ -14,12 +12,31 @@ footer {
         text-underline-offset: none;
     }
 
+    .container {
+        width: 50%;
+    }
+
     .logo {
-        width: 40px;
-        height: 40px;
+        width: 25px;
+        height: 25px;
     }
 
     .logo:hover, logo:focus {
         filter: invert(0.9);
     }
+}
+
+@media only screen and (max-width: 768px) {
+    footer {
+        display: none;
+    }
+}
+
+
+@media only screen and (max-height: 400px) {
+    footer {
+        display: none;
+    }
+
+    
 }

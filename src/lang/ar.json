@@ -1,3 +1,16 @@
 {
-    "greetings": ""
+    "greetings": "!مرحبا ،انا امين",
+    "role": "👨‍💻 انا مهندس ويب",
+    "location": "",
+    "explore": "اكتشف عملي",
+
+    "home": "Home",
+    "projects": "Projects",
+    "profile": "Profile",
+    "skills": "Skills",
+    "blog": "Blog",
+
+    "english": "English",
+    "french": "French",
+    "arabic": "Arabic"
 }

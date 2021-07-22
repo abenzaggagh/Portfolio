@@ -1,3 +1,17 @@
 {
-    "greetings": "Hello, I'm Amine!"
+    "greetings": "Hello, I'm Amine!",
+    "role": "I'm a Full-Stack Web Engineer",
+    "location": "Based in Casablanca, Morocco",
+    "explore": "Explore Work",
+
+
+    "home": "Home",
+    "projects": "Projects",
+    "profile": "Profile",
+    "skills": "Skills",
+    "blog": "Blog",
+
+    "english": "English",
+    "french": "French",
+    "arabic": "Arabic"
 }
