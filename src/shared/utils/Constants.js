@@ -6,13 +6,14 @@ import Facebook from '../../assets/images/facebook.svg';
 
 export default class Constants {
 
-    static OVERLAY = [];
-
     static GREETINGS = "Hello, I'm Amine!";
     static ROLE = "Hello, I'm Amine!";
+    static EXPLORE = "Explore Work";
+    static WORKS_LINK = "projects";
+    static UNDER_CONSTRUCTION = "Explore Work";
 
     static HOME = "Home";
-    static PROJECTS = "Projects";
+    static PROJECTS = "Skills";
     static PROFILE = "Profile";
     static SKILLS = "Skills";
     static BLOG = "Blog";
@@ -20,7 +21,7 @@ export default class Constants {
     static ENGLISH = "English";
     static FRENCH = "French";
     static ARABIC = "Arabic";
-    
+
     static OVERLAY_BUTTONS = [{
         id: 'home',
         link: '',
@@ -44,15 +45,15 @@ export default class Constants {
     }];
 
     static OVERLAY_LANGUAGES = [{
-        link: 'en',
+        locale: 'en',
         id: 'english',
         default: Constants.ENGLISH
     }, {
-        link: 'fr',
+        locale: 'fr',
         id: 'french',
         default: Constants.FRENCH
     }, {
-        link: 'ar',
+        locale: 'ar',
         id: 'arabic',
         default: Constants.ARABIC
     }]

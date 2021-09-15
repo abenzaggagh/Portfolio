@@ -1,50 +1,43 @@
-import React from "react";
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link,
-    useParams,
-    useRouteMatch
-} from "react-router-dom";
+import React, { useState } from "react";
+import { Switch, Route } from 'react-router-dom';
 
 import './App.scss';
 
-import Header from "./shared/Header/Header";
-import Footer from "./shared/Footer/Footer";
-import Overlay from "./shared/Overlay/Overlay";
+import Header from "./shared/header/Header";
+import Footer from "./shared/footer/Footer";
+import Overlay from "./shared/overlay/Overlay";
 
-import Home from "./home/Home";
+import Home from "./features/home/Home";
+import Blog from "./features/blog/Blog";
+import Skills from "./features/skills/Skills";
+import Profile from "./features/profile/Profile";
+import Projects from "./features/projects/Projects";
 
-export default class App extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            isOverlayOpen: false
-        }
-    }
+export default function App() {
+    const [overlay, setOverlay] = useState(false);
 
-    render() {
-        return (<div className="fluid-container">
-                    <Header/>
-                    <main>
-                        <Home /> 
-                    </main>
-                    <Overlay /> 
-                    <Footer />
-                </div>);
-    }
-
+    return (<div className="fluid-container">
+        <Header openOverlay={() => { setOverlay(true) }} />
+        <main>
+            <Switch>
+                <Route exact path="/">
+                    <Home />
+                </Route>
+                <Route path="/blog">
+                    <Blog />
+                </Route>
+                <Route path="/projects">
+                    <Projects />
+                </Route>
+                <Route path="/profile">
+                    <Profile />
+                </Route>
+                <Route path="/skills">
+                    <Skills />
+                </Route>
+            </Switch>
+        </main>
+        <Overlay overlay={overlay} closeOverlay={() => setOverlay(false)} />
+        <Footer/>
+    </div>);
 }
-
-/*
-<Router>
-    <Switch>
-        <Route path="/">
-            <Home />
-        </Route>
-        <Route path="/profile">
-            <h1>Hello, it works</h1>
-        </Route>
-    </Switch>
-</Router>*/
