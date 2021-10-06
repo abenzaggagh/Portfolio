@@ -1,11 +1,22 @@
 footer {
-    left: 0;
+ /*   left: 0;
     bottom: 0;
     width: 100%;
     padding: 20px;
     position: fixed;
     color: #FFFFFF;
     text-align: center !important;
+*/
+    left: 0;
+    margin-top: 32vh;
+    height: 80px;
+    /* bottom: -274px; */
+    width: 100%;
+    padding: 20px;
+    position: relative;
+    color: #FFFFFF;
+    text-align: center !important;
+
 
     a {
         color: #FFFFFF;
