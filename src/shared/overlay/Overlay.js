@@ -17,9 +17,7 @@ export default function Overlay({ overlay, closeOverlay }) {
 
     const changeLanguage = (event) => {
         closeOverlay();
-        // TODO: Refactor the page reloading
         localStorage.setItem('locale', event.target.value)
-        // TODO: Move the IntlProvider from index to App and use state instead of reloading the app
         window.location.reload();
     }
 

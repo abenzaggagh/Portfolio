@@ -1,5 +1,5 @@
-@import '../../assets/styles/Functions';
-@import '../../assets/styles/Variables';
+@import '../../../assets/styles/Functions';
+@import '../../../assets/styles/Variables';
 
 
 .home {
@@ -17,7 +17,7 @@
     width: 36px;
     height: 13px;
     padding: 12px;
-    background-image: url('../../assets/images/arrow.svg');
+    background-image: url('../../../assets/images/arrow.svg');
     background-size: 100% 100%;
     pointer-events: initial;
     animation: hintDown 2s ease-out infinite;

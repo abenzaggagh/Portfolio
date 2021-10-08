@@ -1,7 +1,7 @@
 import React from "react";
 import { FormattedMessage } from 'react-intl';
 
-import Constants from "../../shared/utils/Constants";
+import Constants from "../../../shared/utils/Constants";
 
 import './Home.scss';
 import {Link} from "react-router-dom";
