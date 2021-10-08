@@ -12,7 +12,7 @@ html body {
 	margin: 0;
 	width: 100%;
 	display: inline;
-	overflow: hidden;
+	// overflow: hidden;
 	@include background-gradient();
 }
 
@@ -27,14 +27,23 @@ html body {
 	}
 }
 
-.bubble {
+.bubbles {
+	left: 0;
+	width:100%;
+	height:100%;
+	// bottom: 10vw;
+	overflow:hidden;
 	position: absolute;
-	left: var(--bubble-left-offset);
-	bottom: -75%;
+}
+
+.bubble {
+	// bottom: -75%;
 	display: block;
+	position: relative;
+	border-radius: 50%;
 	width: var(--bubble-radius);
 	height: var(--bubble-radius);
-	border-radius: 50%;
+	left: var(--bubble-left-offset);
 	animation: float-up var(--bubble-float-duration) var(--bubble-float-delay) ease-in infinite;
 
 	&::before {
@@ -51,13 +60,16 @@ html body {
 
 	@for $i from 0 through $bubble-count {
 		&:nth-child(#{$i}) {
-			--bubble-left-offset: #{random_range(0vw, 100vw)};
+			--bubble-sway-type: #{sample($sway-type)};
 			--bubble-radius: #{random_range(1vw, 10vw)};
+
+
 			--bubble-float-duration: #{random_range(8s, 60s)};
 			--bubble-sway-duration: #{random_range(0s, 10s)};
 			--bubble-float-delay: #{random_range(0s, 1s)};
 			--bubble-sway-delay: #{random_range(0s, 1s)};
-			--bubble-sway-type: #{sample($sway-type)};
+			--bubble-left-offset: #{random_range(0vw, 100vw)};
+
 		}
 	}
 }

@@ -1,15 +1,19 @@
 import './Projects.scss';
-import { Alert } from "react-bootstrap";
-import { FormattedMessage } from "react-intl";
-
-import Constants from "../../shared/utils/Constants";
 
 export default function Projects() {
-    return (
-        <div>
-            <Alert className="info">
-                <FormattedMessage id="under_construction" defaultMessage={`${Constants.UNDER_CONSTRUCTION}`} />
-            </Alert>
-            <h1>Projects!</h1>
-        </div>)
+    return (<div>
+        <h1 className={"title"}>Projects!</h1>
+        <div className={"container"}>
+            <div className={"row"}>
+                <div className={"col-4"}>
+                    <a href="#" className="image-link">
+
+                    </a>
+                </div>
+                <div className={"col-8"}>
+
+                </div>
+            </div>
+        </div>
+    </div>);
 }
