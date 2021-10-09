@@ -3,76 +3,89 @@
 
 
 .home {
-    @include center();
+  @include center();
 }
-
 
 .arrow {
-    position: fixed;
-    bottom: 16px;
-    left: 50%;
-    z-index: 250;
-    -ms-transform: translateX(-50%);
-        transform: translateX(-50%);
-    width: 36px;
-    height: 13px;
-    padding: 12px;
-    background-image: url('../../../assets/images/arrow.svg');
-    background-size: 100% 100%;
-    pointer-events: initial;
-    animation: hintDown 2s ease-out infinite;
+  position: fixed;
+  bottom: 16px;
+  left: 50%;
+  z-index: 250;
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: 36px;
+  height: 13px;
+  padding: 12px;
+  background-image: url('../../../assets/images/arrow.svg');
+  background-size: 100% 100%;
+  pointer-events: initial;
+  animation: hintDown 2s ease-out infinite;
 }
 
+.typewriter h3 {
+  width: fit-content;
+  margin: 0 auto;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: .05em solid $cursorColor;
 
+  animation-duration: 3.5s;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+  -o-animation: cssAnimation 0s ease-in 5s forwards;
+  -moz-animation: cssAnimation 0s ease-in 5s forwards;
+  -webkit-animation: cssAnimation 0s ease-in 5s forwards;
+  animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite, cssAnimation 0s ease-in 3s forwards;
+}
 
 .holder {
-    display: flex;
-    align-items: center;
-    
-    justify-content: center;
+  display: flex;
+  align-items: center;
+
+  justify-content: center;
 }
-  
-  .center {
-    width: 180px;
-    height: 60px;
-    position: relative;
-  }
-  
-  .btn {
-    width: 180px;
-    height: 60px;
-    cursor: pointer;
-    background: transparent;
-    border: 1px solid $navyBlue;
-    outline: none;
-    transition: 1s ease-in-out;
-  }
-  
-  svg {
-    position: absolute;
-    left: 0;
-    top: 0;
-    fill: none;
-    stroke: $whiteColor;
-    stroke-dasharray: 150 480;
-    stroke-dashoffset: 150;
-    transition: 1s ease-in-out;
-  }
-  
-  .btn:hover {
-    transition: 1s ease-in-out;
-    background: $navyBlue;
-  }
-  
-  .btn:hover svg {
-    stroke-dashoffset: -480;
-  }
-  
-  .btn span {
-    color: $whiteColor;
-    font-size: 18px;
-    font-weight: 100;
-  }
+
+.center {
+  width: 180px;
+  height: 60px;
+  position: relative;
+}
+
+.btn {
+  width: 180px;
+  height: 60px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid $navyBlue;
+  outline: none;
+  transition: 1s ease-in-out;
+}
+
+svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  fill: none;
+  stroke: $whiteColor;
+  stroke-dasharray: 150 480;
+  stroke-dashoffset: 150;
+  transition: 1s ease-in-out;
+}
+
+.btn:hover {
+  transition: 1s ease-in-out;
+  background: $navyBlue;
+}
+
+.btn:hover svg {
+  stroke-dashoffset: -480;
+}
+
+.btn span {
+  color: $whiteColor;
+  font-size: 18px;
+  font-weight: 100;
+}
 
 .center-padding {
   padding: 15px

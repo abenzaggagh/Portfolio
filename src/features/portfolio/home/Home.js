@@ -9,12 +9,14 @@ import {Link} from "react-router-dom";
 export default function Home() {
     return (
         <section className="home text-center p-5">
-            <div>
-                <h1 className="">
+            <>
+                <h1>
                     <FormattedMessage id="greetings" defaultMessage={`${Constants.GREETINGS}`} />
                 </h1>
-                <h3><FormattedMessage id="role" defaultMessage={`${Constants.ROLE}`} /></h3>
-            </div>
+                <div className="typewriter">
+                    <h3><FormattedMessage id="role" defaultMessage={`${Constants.ROLE}`} /></h3>
+                </div>
+            </>
 
             <div className="mt-5">
                 <div className="holder">

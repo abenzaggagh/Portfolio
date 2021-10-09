@@ -1,5 +1,6 @@
-// Functions
+@import './Variables';
 
+// Functions
 @function random_range($min, $max) {
     @return $min + floor(random() * (($max - $min) + 1));
 }
@@ -8,11 +9,30 @@
     @return nth($list, random(length($list)));
 }
 
+@keyframes cssAnimation {
+  to {
+    border: none;
+  }
+}
+@-webkit-keyframes cssAnimation {
+  to {
+    border: none;
+  }
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: $cursorColor; }
+}
+
 // Mixin
 @mixin background-gradient() {
-	background: -ms-gradient(linear, left top, left bottom, color-stop(0%, $midnightBlue));
-	background: -moz-gradient(linear, left top, left bottom, color-stop(0%, $midnightBlue));
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $midnightBlue));
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $midnightBlue));
 }
 
 @mixin center() {    
