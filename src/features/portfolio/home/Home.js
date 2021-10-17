@@ -4,10 +4,12 @@ import { FormattedMessage } from 'react-intl';
 import Constants from "../../../shared/utils/Constants";
 
 import './Home.scss';
+
 import {Link} from "react-router-dom";
 
 export default function Home() {
-    return (
+    return (<>
+
         <section className="home text-center p-5">
             <>
                 <h1>
@@ -31,6 +33,6 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-        </section>);
+        </section></>);
 }
 

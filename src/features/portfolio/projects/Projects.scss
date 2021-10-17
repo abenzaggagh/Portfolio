@@ -3,3 +3,7 @@
   text-align: start;
   padding-left: 2rem;
 }
+
+.scroll-bounce {
+  overscroll-behavior: contain;
+}
