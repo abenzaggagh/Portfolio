@@ -1,8 +1,11 @@
 {
     "greetings": "Hello, I'm Amine!",
-    "role": "I'm a Full-Stack Web Engineer",
+    "role": "I'm a Software Engineer at Orange",
     "location": "Based in Casablanca, Morocco",
     "explore": "Explore Work",
+
+
+    "project_subtitle": "See my works below, all their back-end and front-end parts were completely done by me.",
 
     "under_construction": "This website is still underconstruction!",
 

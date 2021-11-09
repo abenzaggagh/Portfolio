@@ -15,7 +15,7 @@ html body {
 	@include background-gradient();
 }
 
-$width: calc(100vh - 16vh);
+$width: calc(100vh - 18vh);
 
 main {
 	height: $width;
@@ -62,7 +62,7 @@ main {
 		height: 100%;
 		position: absolute;
 		border-radius: inherit;
-		background: hsla(183, 93%, 76%, 0.1);
+		background: $orangeColor;// hsla(183, 93%, 76%, 0.1);
 		animation: var(--bubble-sway-type) var(--bubble-sway-duration) var(--bubble-sway-delay) ease-in-out alternate infinite;
 	}
 

@@ -1,8 +1,10 @@
 {
     "greetings": "Bonjour, Je suis Amine!",
-    "role": "Ingénieur d'étude et développement",
+    "role": "Je suis Ingénieur Logiciel chez Orange",
     "location": "",
     "explore": "Explorer Travail",
+
+    "project_subtitle": "Voir mes travaux ci-dessous, toutes leurs parties back-end et front-end ont été entièrement réalisées par mes soins.",
 
     "under_construction": "Ce site internet est toujours en construction!",
 

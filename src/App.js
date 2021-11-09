@@ -3,7 +3,7 @@ import './App.scss';
 import React from "react";
 
 import Firestore from "./utils/firestore";
-import { doc, addDoc, collection } from "firebase/firestore";
+import { addDoc, collection } from "firebase/firestore";
 
 import { Bubbles } from "./shared/Bubbles";
 import Portfolio from "./features/portfolio/Portfolio";

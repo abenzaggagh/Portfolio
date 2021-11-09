@@ -22,6 +22,8 @@ export default class Constants {
     static FRENCH = "French";
     static ARABIC = "Arabic";
 
+    static PROJECT_SUBTITLE = "See my works below, all their back-end and front-end parts were completely done by me.";
+
     static OVERLAY_BUTTONS = [{
         id: 'home',
         link: '',

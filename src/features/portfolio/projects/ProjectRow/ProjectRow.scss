@@ -1,5 +1,16 @@
+@import '../../../../assets/styles/Variables.scss';
+
+
+
 .project-row {
   padding: 30px;
+  margin-bottom: 25px;
+  border-radius: 16px;
+  border: 0.5px solid $orangeColor !important;
+}
+
+.project-description {
+  margin: 25px 0;
 }
 
 .project-clipart {
