@@ -9,13 +9,76 @@ h1 {
 }
 
 h3 {
-	font-weight: 100;
-	font-family: 'Mukta-Light', serif;
-	color: $textColor;
 	font-size: 30px;
+	font-weight: 100;
+	color: $textColor;
+	font-family: 'Mukta-Light', serif;
 }
 
 .info {
 	margin: 20px;
 	background: yellow;
+}
+
+/**
+ * Width
+ * iPhone 6/7/8 Plus - Width dimensions
+ */
+@media only screen and (max-width: 414px) {
+	h1 {
+		font-size: 42px;
+	}
+
+	h3 {
+		font-size: 20px;
+	}
+
+	@for $i from 1 through 6 {
+		h#{$i} {
+			white-space: nowrap;
+			margin: 20 - ($i * 3px);
+		}
+	}
+}
+
+/**
+ * Width
+ * iPhone 6/7/8 & X - Width dimensions
+ */
+@media only screen and (max-width: 375px) {
+	h1 {
+		font-size: 40px;
+	}
+
+	h3 {
+		font-size: 18px;
+	}
+
+	@for $i from 1 through 6 {
+		h#{$i} {
+			white-space: nowrap;
+			margin: 15 - ($i * 3px);
+		}
+	}
+}
+
+/**
+ *
+ * iPhone 5/SE - Width dimensions
+ */
+@media only screen and (max-width: 320px) {
+	h1 {
+		font-size: 36px;
+	}
+
+	h3 {
+		font-size: 15px;
+	}
+
+	@for $i from 1 through 6 {
+		h#{$i} {
+			white-space: nowrap;
+			margin: 10 - ($i * 2px);
+		}
+	}
 }

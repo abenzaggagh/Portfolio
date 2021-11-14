@@ -12,7 +12,7 @@ import Constants from "../../../shared/utils/Constants";
 
 
 export default function Projects() {
-    const [projects, setProjects] = useState([])
+    const [projects, setProjects] = useState([]);
 
     useEffect(() => {
         fetchProjects().then();
@@ -32,18 +32,11 @@ export default function Projects() {
                 <p className={"subtitle"}><FormattedMessage id={"project_subtitle"} defaultMessage={Constants.PROJECT_SUBTITLE} /></p>
                 <div className={"fluid-container m-5 scroll-bounce"}>
                     { projects.map(project => <ProjectRow key={project.id}
-                                                          title={project.title}
-                                                          description={project.description}
+                                                          link={project.link}
                                                           cover={project.cover}
-                                                          link={project.link} />)}
+                                                          title={project.title}
+                                                          description={project.description} />)}
                 </div>
             </div>
-            {/*
-            <div>
-                <h1 className={"title"}>Experience</h1>
-                <p className={"subtitle"}><FormattedMessage id={"project_subtitle"} defaultMessage={Constants.PROJECT_SUBTITLE} /></p>
-
-            </div>
-             */}
         </>);
 }

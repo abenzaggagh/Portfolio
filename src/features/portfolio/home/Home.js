@@ -10,7 +10,7 @@ import SquareButton from "../../../shared/buttons/square-btn/SquareButton";
 export default function Home() {
     return (
         <>
-            <section className="home text-center p-5">
+            <section className="home text-center">
                 <>
                     <h1>
                         <FormattedMessage id="greetings" defaultMessage={`${Constants.GREETINGS}`} />
