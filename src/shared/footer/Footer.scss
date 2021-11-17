@@ -3,38 +3,79 @@ footer {
     height: 6vh;
     padding: 2vh;
     color: #FFFFFF;
-    margin-top: 2vh;
+    // margin-top: 2vh;
     text-align: center !important;
 
     a {
         color: #FFFFFF;
     }
 
+}
+
+.container {
+    width: 50%;
+}
+
+.logo {
+    width: 25px;
+    height: 25px;
+}
+
+.logo:hover, logo:focus {
+    filter: invert(0.9);
+}
+
+
+/**
+ * Width
+ * iPhone 6/7/8 Plus - Width dimensions
+ */
+@media only screen and (max-width: 414px) {
     .container {
-        width: 50%;
+        width: 100%;
     }
 
     .logo {
-        width: 25px;
-        height: 25px;
-    }
-
-    .logo:hover, logo:focus {
-        filter: invert(0.9);
+        width: 22px;
+        height: 22px;
     }
 }
 
-@media only screen and (max-width: 768px) {
-    footer {
-        display: none;
+/**
+ * Width
+ * iPhone 6/7/8 & X - Width dimensions
+ */
+@media only screen and (max-width: 375px) {
+    .container {
+        width: 100%;
+    }
+
+    .logo {
+        width: 20px;
+        height: 20px;
     }
 }
 
+/**
+ *
+ * iPhone 5/SE - Width dimensions
+ */
+@media only screen and (max-width: 320px) {
+    .container {
+        width: 100%;
+    }
 
-@media only screen and (max-height: 400px) {
+    .logo {
+        width: 18px;
+        height: 18px;
+    }
+}
+
+/**
+ * Uncommon
+ **/
+@media only screen and (max-width: 270px) {
     footer {
         display: none;
     }
-
-
 }

@@ -1,54 +1,350 @@
 @import '../../../assets/styles/Variables';
 
 .holder {
-  display: flex;
-  align-items: center;
-
-  justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .center {
-  width: 180px;
-  height: 60px;
-  position: relative;
+    width: 200px;
+    height: 65px;
+    position: relative;
 }
-
+/*
 .btn {
-  width: 180px;
-  height: 60px;
-  cursor: pointer;
-  background: transparent;
-  border: 1px solid $navyBlue;
-  outline: none;
-  transition: 1s ease-in-out;
+    height: 60px;
+    width: 180px;
+    outline: none;
+    cursor: pointer;
+    background: transparent;
+    transition: 1s ease-in-out;
+    border: 1px solid $orangeColor;
 }
 
 svg {
-  position: absolute;
-  left: 0;
-  top: 0;
-  fill: none;
-  stroke: $whiteColor;
-  stroke-dasharray: 150 480;
-  stroke-dashoffset: 150;
-  transition: 1s ease-in-out;
+    top: 0;
+    left: 0;
+    fill: none;
+    height: 60px;
+    width: 180px;
+    position: absolute;
+    stroke: $whiteColor;
+    stroke-dashoffset: 150;
+    stroke-dasharray: 150 480;
+    transition: 1s ease-in-out;
 }
 
 .btn:hover {
-  transition: 1s ease-in-out;
-  background: $navyBlue;
+    background: $orangeColor;
+    transition: 1s ease-in-out;
 }
 
 .btn:hover svg {
-  stroke-dashoffset: -480;
+    stroke-dashoffset: -480;
 }
 
 .btn span {
-  color: $whiteColor;
-  font-size: 18px;
-  font-weight: 100;
+    font-size: 18px;
+    font-weight: 100;
+    color: $whiteColor;
 }
 
 .center-padding {
-  padding: 15px
+    padding: 15px
+}
+*/
+/**
+ * Width
+ * iPhone 6/7/8 Plus - Width dimensions
+ */
+@media only screen and (max-width: 414px) {
+    .btn {
+
+    }
+}
+
+/**
+ * Width
+ * iPhone 6/7/8 & X - Width dimensions
+ */
+@media only screen and (max-width: 375px) {
+    .btn {
+
+    }
+}
+
+/**
+ *
+ * iPhone 5/SE - Width dimensions
+ */
+@media only screen and (max-width: 320px) {
+    .btn {
+        width: 100px;
+        height: 45px;
+    }
+
+    .svg {
+        width: 100px;
+        height: 45px;
+    }
+}
+/*
+h1 {
+    color: $white;
+    font-size: 1.25em;
+    font-weight: 900;
+    margin: 0 0 2em;
+
+    @media (min-width: 450px) {
+        font-size: 1.75em;
+    }
+
+    @media (min-width: 760px) {
+        font-size: 3.25em;
+    }
+
+    @media (min-width: 900px) {
+        font-size: 5.25em;
+        margin: 0 0 1em;
+    }
+}
+
+p {
+    color: $white;
+    font-size: 12px;
+
+    @media(min-width: 600px) {
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%, 0);
+        top: 90%;
+    }
+
+    @media(max-height: 500px) {
+        left: 0;
+        position: relative;
+        top: 0;
+        transform: translate(0, 0);
+    }
+
+    a {
+        background: rgba($white, 0);
+        border-bottom: 1px solid;
+        color: $white;
+        line-height: 1.4;
+        padding: .25em;
+        text-decoration: none;
+
+        &:hover {
+            background: rgba($white, 1);
+            color: $red;
+        }
+    }
+}*/
+//button styles
+/*
+
+//default button
+.btn {
+    color: #fff;
+    cursor: pointer;
+    // display: block;
+    font-size:16px;
+    font-weight: 400;
+    line-height: 45px;
+    margin: 0 0 2em;
+    max-width: 160px;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 100%;
+
+    //   @media(min-width: 400px) {
+    //     display: inline-block;
+    //     margin-right: 2.5em;
+
+    //     &:nth-of-type(even) {
+    //       margin-right: 0;
+    //     }
+    //   }
+
+    @media(min-width: 600px) {
+
+        margin: 0 1em 2em;
+
+        //     &:nth-of-type(even) {
+        //       margin-right: 2.5em;
+        //     }
+
+        //     &:nth-of-type(5) {
+        //       margin-right: 0;
+        //     }
+
+    }
+
+    &:hover { text-decoration: none; }
+
+}
+
+/////////////////////////////////
+//button one
+///////////////////////////////
+.btn-1 {
+    background: darken($red, 1.5%);
+    font-weight: 100;
+
+    svg {
+        height: 45px;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+
+    rect {
+        fill: none;
+        stroke: #fff;
+        stroke-width: 2;
+        stroke-dasharray: 422, 0;
+        transition: all 0.35s linear;
+    }
+}
+
+.btn-1:hover {
+    background: rgba($red, 0);
+    font-weight: 900;
+    letter-spacing: 1px;
+
+    rect {
+        stroke-width: 5;
+        stroke-dasharray: 15, 310;
+        stroke-dashoffset: 48;
+        transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+    }
+}
+
+*/
+
+// Animate the size, inside
+.fill:hover, .fill:focus {
+    box-shadow: inset 0 0 0 2em var(--hover);
+}
+
+// Animate the size, outside
+.pulse:hover,
+.pulse:focus {
+    animation: pulse 1s;
+    box-shadow: 0 0 0 2em rgba(#fff,0);
+}
+
+@keyframes pulse {
+    0% { box-shadow: 0 0 0 0 var(--hover); }
+}
+
+// Stack multiple shadows, one from the left, the other from the right
+.close:hover,
+.close:focus {
+    box-shadow:
+            inset -3.5em 0 0 0 var(--hover),
+            inset 3.5em 0 0 0 var(--hover);
+}
+
+// Size can also be negative; see how it's smaller than the element
+.raise:hover,
+.raise:focus {
+    box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+    transform: translateY(-0.25em);
+}
+
+// Animating from the bottom
+.up:hover,
+.up:focus {
+    box-shadow: inset 0 -3.25em 0 0 var(--hover);
+}
+
+// And from the left
+.slide:hover,
+.slide:focus {
+    box-shadow: inset 6.5em 0 0 0 var(--hover);
+}
+
+// Multiple shadows, one on the outside, another on the inside
+.offset {
+    box-shadow:
+            0.3em 0.3em 0 0 var(--color),
+            inset 0.3em 0.3em 0 0 var(--color);
+
+    &:hover,
+    &:focus {
+        box-shadow:
+                0 0 0 0 var(--hover),
+                inset 6em 3.5em 0 0 var(--hover);
+    }
+}
+
+//=== Set button colors
+// If you wonder why use Sass vars or CSS custom properties...
+// Make a map with the class names and matching colors
+$colors: (
+        fill: $whiteColor,
+        pulse: $whiteColor,
+        close: $whiteColor,
+        raise: $whiteColor,
+        up: $whiteColor,
+        slide: $whiteColor,
+        offset: $whiteColor
+);
+
+// Sass variables compile to a static string; CSS variables are dynamic and inherited
+// Loop through the map and set CSS custom properties using Sass variables
+@each $button, $color in $colors {
+    .#{$button} {
+        --color: #{$color};
+        --hover: #{$darkOrangeColor};
+    }
+}
+
+// Now every button will have different colors as set above. We get to use the same structure, only changing the custom properties.
+button {
+    color: var(--color);
+    transition: 0.25s;
+
+    &:hover,
+    &:focus {
+        border-color: var(--hover);
+        color: #fff;
+    }
+}
+
+//=== Pen styling, ignore
+body {
+    color: #fff;
+    background: hsl(227, 10%, 10%);
+    font: 300 1em 'Fira Sans', sans-serif;
+
+    // Center everything ever
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+}
+
+// Basic button styles
+button {
+    background: none;
+    border: 2px solid;
+    font: inherit;
+    line-height: 1;
+    margin: 0.5em;
+    padding: 1em 2em;
+}
+
+h1 { font-weight: 400; }
+
+code {
+    color: #e4cb58;
+    font: inherit;
 }

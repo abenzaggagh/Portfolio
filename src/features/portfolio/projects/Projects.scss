@@ -1,17 +1,69 @@
 .title {
-  margin: 0;
-  font-size: 50px;
-  text-align: start;
-  padding-left: 2rem;
+    margin: 0;
+    font-size: 50px;
+    padding: 0 2rem;
+    text-align: start;
 }
 
 .subtitle {
-  font-size: 20px;
-  margin: 10px 0 0;
-  text-align: start;
-  padding-left: 2rem;
+    font-size: 20px;
+    padding: 0 2rem;
+    margin: 10px 0 0;
+    text-align: start;
 }
 
 .scroll-bounce {
-  overscroll-behavior: contain;
+    overscroll-behavior: contain;
+}
+
+
+/**
+ * Width
+ * iPhone 6/7/8 Plus - Width dimensions
+ */
+@media only screen and (max-width: 414px) {
+    .title {
+        font-size: 45px;
+        padding-left: 2rem;
+    }
+
+    .subtitle {
+        font-size: 18px;
+        padding: 0 2rem;
+        line-height: 1.5;
+    }
+}
+
+/**
+ * Width
+ * iPhone 6/7/8 & X - Width dimensions
+ */
+@media only screen and (max-width: 375px) {
+    .title {
+        font-size: 35px;
+        padding-left: 2rem;
+    }
+
+    .subtitle {
+        font-size: 15px;
+        padding: 0 2rem;
+        line-height: 1.6;
+    }
+}
+
+/**
+ *
+ * iPhone 5/SE - Width dimensions
+ */
+@media only screen and (max-width: 320px) {
+    .title {
+        font-size: 35px;
+        padding-left: 2rem;
+    }
+
+    .subtitle {
+        font-size: 13px;
+        padding: 0 2rem;
+        line-height: 1.4;
+    }
 }
