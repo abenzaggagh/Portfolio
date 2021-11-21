@@ -1,0 +1,46 @@
+@import "../../assets/styles/Variables.scss";
+
+.card h4 p {
+    color: white;
+}
+
+.card {
+    border: none;
+    background: none;
+    text-align: center;
+    padding: 25px 0 0 0;
+    border-radius: 50px;
+}
+
+.card-img-top {
+    height: 300px;
+    width: auto;
+}
+
+.card-img-top:hover {
+    // box-shadow: 0 8px 16px 0 $darkOrangeColor;
+}
+
+
+.card-cover {
+    height: 300px;
+    margin: auto;
+    text-align: center;
+}
+
+
+.card-title {
+    color: white;
+}
+
+.card-text {
+    // color: black;
+}
+
+
+.card-loading {
+    width: 6rem;
+    height: 6rem;
+    margin: auto;
+    color: $darkOrangeColor;
+}
