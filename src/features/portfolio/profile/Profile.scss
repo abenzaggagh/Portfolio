@@ -1,17 +1,80 @@
+@import "../../../assets/styles/Variables";
+
+@for $i from 1 through 6 {
+    h#{$i} {
+        margin: 0;
+    }
+}
+
 p {
-  margin: 30px;
-  color: white;
-  letter-spacing: .01em;
+    color: white;
+    letter-spacing: .01em;
 }
 
 .align-left {
-  text-align: start;
+    text-align: start;
 }
 
 .paragraph {
-  font-family: 'Mukta-Light', serif;
-  text-space: 2px;
-  font-size: 21px;
-  margin: 25px 20px;
+    text-space: 2px;
+    font-size: 21px;
+    padding: 15px 20px;
+    font-family: 'Mukta-Light', serif;
+}
 
+.spinner-grow {
+    width: 6rem;
+    height: 6rem;
+    margin: 40px auto;
+    color: $darkOrangeColor;
+}
+
+.align-center {
+    text-align: center;
+}
+
+@media only screen and (max-width: 1270px) {
+    .memoji {
+        width: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 421px) {
+    .memoji {
+        width: inherit;
+    }
+}
+
+/**
+ * Width
+ * iPhone 6/7/8 Plus - Width dimensions
+ */
+@media only screen and (max-width: 414px) {
+    .paragraph {
+        text-space: 2px;
+        padding: 15px 20px;
+    }
+}
+
+/**
+ * Width
+ * iPhone 6/7/8 & X - Width dimensions
+ */
+@media only screen and (max-width: 375px) {
+    .paragraph {
+        text-space: 2px;
+        padding: 15px 20px;
+    }
+}
+
+/**
+ *
+ * iPhone 5/SE - Width dimensions
+ */
+@media only screen and (max-width: 320px) {
+    .paragraph {
+        text-space: 2px;
+        padding: 15px 20px;
+    }
 }

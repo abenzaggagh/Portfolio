@@ -2,12 +2,37 @@
     "greetings": "Hello, I'm Amine!",
     "role": "I'm a Software Engineer",
     "location": "Based in Casablanca, Morocco",
+
     "explore": "Explore Work",
-
-
     "project_subtitle": "See my works below, all their back-end and front-end parts were completely done by me.",
 
-    "under_construction": "This website is still underconstruction!",
+    "about_me": "About Me",
+    "career_goals": "Career Goals",
+    "brief_history": "Brief History",
+    "currently_reading": "Currently, I'm reading",
+
+    "career_goals_line": "Become a tech lead and then an architect in developing large scale enterprise applications using the recent technologies.",
+    "currently_working": "Currently working as a Research and Development Engineer at ",
+
+    "profile_1_line": "My name is Amine BEN ZAGGAGH, 23 years old and I'm a full-stack software engineer based in Casablanca, Morocco.",
+    "profile_2_line": "I write code and develop web and mobile applications for both iOS and Android operating system.",
+    "profile_3_line": "I focus on writing clean, elegant and efficient code.",
+    "profile_4_line": "I love programming, traveling and reading books!",
+
+    "skills_title": "Skills & Experiences",
+    "experience_title": "Experiences",
+
+    "skills_front_end_title": "Front-End Engineering",
+    "skills_front_end_line": "In front-end development, my current stack involves HTML with CSS and SASS, and Angular and React frameworks.",
+
+    "skills_back_end_title": "Back-End Engineering",
+    "skills_back_end_line": "In back-end development, my current stack involves mainly Java 8 with the Spring framework, and alternatively Node JS with Express or PHP using Laravel.",
+
+    "skills_others_title": "Database and Versioning",
+    "skills_others_line": "The others skills and technologies I use",
+
+    "skills_soft_title": "Soft Skills",
+    "skills_soft_line": "In back-end development, my current stack involves mainly Java 8 with the Spring framework, and alternatively Node JS with Express or PHP using Laravel.",
 
     "home": "Home",
     "projects": "Projects",
@@ -17,5 +42,29 @@
 
     "english": "English",
     "french": "French",
-    "arabic": "Arabic"
+    "arabic": "Arabic",
+
+    "under_construction": "This website is still under construction!",
+
+    "exp_1_from_date": "September 2020",
+    "exp_1_to_date": "November 2021",
+    "exp_1_role": "Research and Design Engineer",
+    "exp_1_company": "Docaposte",
+    "exp_1_task_1": "Requirement analysis. Quantification, designing, developing of evolutions and new features.",
+    "exp_1_task_2": "Developing unit and integration tests.",
+    "exp_1_task_3": "Participation in actions to maintain operational conditions and continuous improvement.",
+    "exp_1_task_4": "Incident management and analysis, correction of anomalies, code improvement and version upgrades.",
+
+    "exp_2_from_date": "February 2020",
+    "exp_2_to_date": "August 2020",
+    "exp_2_role": "Full-Stack Developer Intern",
+    "exp_2_company": "Docaposte",
+    "exp_2_task_1": "Developing a Back Office interface for tracking the procedures and displaying statistics.",
+    "exp_2_task_2": "Developing GitLab CI/CD pipelines using GitLab Runners.",
+    "exp_2_task_3": "Developing Payment Auditing unit asynchronous using Spring Event, Spring AOP.",
+
+    "exp_3_from_date": "February 2020",
+    "exp_3_to_date": "August 2020",
+    "exp_3_role": "Full-Stack Developer Intern",
+    "exp_3_company": "Direction de la Coopération et du Partenariat"
 }

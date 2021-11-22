@@ -4,136 +4,40 @@ import { FormattedMessage } from "react-intl";
 
 import SquareButton from "../../../shared/buttons/square-btn/SquareButton";
 
-import SkillIcon from "./SkillIcons/SkillIcon";
-
 import Constants from "../../../shared/utils/Constants";
+import SkillRow from "./SkillRow/SkillRow";
+import Experiences from "./Experience/Experiences";
 
 export default function Skills() {
     return (
         <>
             <div className={"container"}>
 
-                <div className={"row"}>
-                    <div>
-                        <div className={""}>
-                            <h3>
-                                <FormattedMessage id={"skills_front_end_title"} defaultMessage={""} />
-                            </h3>
-                        </div>
-
-                        <div className={"mt-3"}>
-                            <p>
-                                <FormattedMessage id={"skills_front_end_line"} defaultMessage={""} />
-                            </p>
-                        </div>
-
-                        <div className={"mt-3"}>
-                            <div className={"row"}>
-                                {Constants.FRONT_END_SKILLS.map(skill => <>
-                                    <div className={"col"}>
-                                        <SkillIcon images={skill.images} title={skill.title}/>
-                                    </div>
-                                </>)}
-                            </div>
-                        </div>
-
-                    </div>
+                <div className={"mb-4"}>
+                    <h1 className="title">
+                        <FormattedMessage id={"skills_title"} defaultMessage={""} />
+                    </h1>
                 </div>
 
-                <div className={"row mt-4"}>
-                    <div>
-                        <div className={""}>
-                            <h3>
-                                <FormattedMessage id={"skills_back_end_title"} defaultMessage={""} />
-                            </h3>
-                        </div>
+                <SkillRow skill_title={"skills_front_end_title"}
+                          skill_subtitle={"skills_front_end_line"}
+                          skills={Constants.FRONT_END_SKILLS}/>
 
-                        <div className={"mt-3"}>
-                            <p>
-                                <FormattedMessage id={"skills_back_end_line"} defaultMessage={""} />
-                            </p>
-                        </div>
+                <SkillRow skill_title={"skills_back_end_title"}
+                          skill_subtitle={"skills_back_end_line"}
+                          skills={Constants.BACK_END_SKILLS}/>
 
-                        <div className={"mt-3"}>
-                            <div className={"row"}>
-                                {Constants.BACK_END_SKILLS.map(skill => <>
-                                    <div className={"col"}>
-                                        <SkillIcon images={skill.images} title={skill.title}/>
-                                    </div>
-                                </>)}
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <SkillRow skill_title={"skills_others_title"}
+                          skill_subtitle={"skills_others_line"}
+                          skills={Constants.OTHERS_SKILLS}/>
 
-                <div className={"row mt-4"}>
-                    <div>
-                        <div className={""}>
-                            <h3>
-                                <FormattedMessage id={"skills_others_title"} defaultMessage={""} />
-                            </h3>
-                        </div>
+                <SkillRow skill_title={"skills_soft_title"}
+                          skills={Constants.SOFT_SKILLS} />
 
-                        <div className={"mt-3"}>
-                            <p>
-                                <FormattedMessage id={"skills_others_line"} defaultMessage={""} />
-                            </p>
-                        </div>
+                <Experiences title={"experience_title"}
+                    experiences={Constants.EXPERIENCES} />
 
-                        <div className={"mt-3"}>
-                            <div className={"row"}>
-                                {Constants.OTHERS_SKILLS.map(skill => <>
-                                    <div className={"col"}>
-                                        <SkillIcon images={skill.images} title={skill.title} />
-                                    </div>
-                                </>)}
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div className={"row mt-4"}>
-                    <div>
-                        <div className={"mt-2"}>
-                            <h3>Soft Skills</h3>
-                        </div>
-
-                        <div className={"mt-3"}>
-                            <p> </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div className={"row mt-4"}>
-                    <div>
-                        <div className={"mt-2"}>
-                            <h3>Experiences</h3>
-                        </div>
-
-                        <div className={"mt-3"}>
-                            {Constants.EXPERIENCES.map(experience => <>
-                                <div className={"row mb-3"}>
-                                    <div className={"col"}>
-                                        <h5>{experience.fromDate} - {experience.toDate}</h5>
-                                    </div>
-                                    <div className={"col"}>
-                                        <h3>{experience.role}</h3>
-                                        <h5>{experience.company}</h5>
-                                    </div>
-                                    <div className={"col"}>
-                                        <ul>
-                                            {experience.tasks.map(task => <li>
-                                                <p>{task}</p>
-                                            </li>)}
-                                        </ul>
-                                    </div>
-                                </div>
-                            </>)}
-                        </div>
-                    </div>
-                </div>
-
-                <div className={"row mt-2 mb-4"}>
+                <div className={"row mt-5 mb-4"}>
                     <div className={"col-6"}>
                         <SquareButton isFile={true}
                                       style={"raise"}

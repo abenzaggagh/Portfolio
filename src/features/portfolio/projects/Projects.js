@@ -5,8 +5,9 @@ import React, { useEffect, useState } from "react";
 import ProjectRow from "./ProjectRow/ProjectRow";
 
 import Firestore from "../../../utils/firestore";
-import { collection, getDocs } from "firebase/firestore";
 import {FormattedMessage} from "react-intl";
+
+import { collection, getDocs } from "firebase/firestore";
 
 import Constants from "../../../shared/utils/Constants";
 
@@ -27,8 +28,10 @@ export default function Projects() {
 
     return (
         <>
-            <div>
-                <h1 className={"title"}><FormattedMessage id={"projects"} defaultMessage={Constants.PROJECTS} /></h1>
+            <div className={"container"}>
+                <h1 className={"title"}>
+                    <FormattedMessage id={"projects"} defaultMessage={Constants.PROJECTS} />
+                </h1>
                 <p className={"subtitle"}><FormattedMessage id={"project_subtitle"} defaultMessage={Constants.PROJECT_SUBTITLE} /></p>
                 <div className={"fluid-container m-5 scroll-bounce"}>
                     { projects.map(project => <ProjectRow key={project.id}

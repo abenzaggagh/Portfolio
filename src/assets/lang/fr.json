@@ -1,12 +1,38 @@
 {
     "greetings": "Bonjour, Je suis Amine!",
     "role": "Je suis Ingénieur Logiciel",
-    "location": "",
-    "explore": "Explorer Travail",
+    "location": "Basé à Casabblanca, Maroc",
 
+    "explore": "Explorer Travail",
     "project_subtitle": "Voir mes travaux ci-dessous, toutes leurs parties back-end et front-end ont été entièrement réalisées par mes soins.",
 
-    "under_construction": "Ce site internet est toujours en construction!",
+    "about_me": "À Propos de Moi",
+    "career_goals": "Plan de Carrière",
+    "brief_history": "Bref Historique",
+    "currently_reading": "En ce moment, je lis",
+
+    "currently_working": "Actuellement j'occupe le poste d'Ingénieur Recherche et Développement chez ",
+    "career_goals_line": "Devenez un Tech-lead puis un architecte dans le développement des applications d'entreprise à grande échelle en utilisant les technologies récentes.",
+
+    "profile_1_line": "Je m'appelle Amine BEN ZAGGAGH, 23 ans et je suis un ingénieur logiciel full-stack basé à Casablanca, Maroc.",
+    "profile_2_line": "Je développe des applications Web et mobiles pour les systèmes d'exploitation iOS et Android.",
+    "profile_3_line": "Je me concentre sur le développement d'un code propre, élégant et efficace.",
+    "profile_4_line": "J'aime programmer, voyager, et lire des livres!",
+
+    "skills_title": "Compétences et Expériences",
+    "experience_title": "Experiences",
+
+    "skills_front_end_title": "Front-End Engineering",
+    "skills_front_end_line": "In front-end development, my current stack involves HTML with CSS and SASS, and Angular and React frameworks.",
+
+    "skills_back_end_title": "Back-End Engineering",
+    "skills_back_end_line": "In back-end development, my current stack involves Java 8 with the Spring framework, and alternatively Node JS with Express.",
+
+    "skills_others_title": "Base de données et Versionnage",
+    "skills_others_line": "Les autres compétences et technologies que j'utilise",
+
+    "skills_soft_title": "Compétences Générales",
+    "skills_soft_line": "In back-end development, my current stack involves mainly Java 8 with the Spring framework, and alternatively Node JS with Express or PHP using Laravel.",
 
     "home": "Accueil",
     "projects": "Projets",
@@ -16,6 +42,30 @@
 
     "english": "Anglais",
     "french": "Français",
-    "arabic": "Arabe"
+    "arabic": "Arabe",
+
+    "under_construction": "Ce site internet est toujours en construction!",
+
+    "exp_1_from_date": "September 2020",
+    "exp_1_to_date": "November 2021",
+    "exp_1_role": "Research and Design Engineer",
+    "exp_1_company": "Docaposte",
+    "exp_1_task_1": "Requirement analysis. Quantification, designing, developing of evolutions and new features.",
+    "exp_1_task_2": "Developing unit and integration tests.",
+    "exp_1_task_3": "Participation in actions to maintain operational conditions and continuous improvement.",
+    "exp_1_task_4": "Incident management and analysis, correction of anomalies, code improvement and version upgrades.",
+
+    "exp_2_from_date": "February 2020",
+    "exp_2_to_date": "August 2020",
+    "exp_2_role": "Full-Stack Developer Intern",
+    "exp_2_company": "Docaposte",
+    "exp_2_task_1": "Developing a Back Office interface for tracking the procedures and displaying statistics.",
+    "exp_2_task_2": "Developing GitLab CI/CD pipelines using GitLab Runners.",
+    "exp_2_task_3": "Developing Payment Auditing unit asynchronous using Spring Event, Spring AOP.",
+
+    "exp_3_from_date": "February 2020",
+    "exp_3_to_date": "August 2020",
+    "exp_3_role": "Full-Stack Developer Intern",
+    "exp_3_company": "Direction de la Coopération et du Partenariat"
 
 }

@@ -3,7 +3,6 @@
 h1 {
 	font-size: 60px;
 	font-weight: 100;
-	color: $textColor;
 	text-align: center;
 	font-family: 'ZenTokyoZoo', serif;
 }
@@ -11,8 +10,13 @@ h1 {
 h3 {
 	font-size: 30px;
 	font-weight: 100;
-	color: $textColor;
 	font-family: 'Mukta-Light', serif;
+}
+
+@for $i from 1 through 6 {
+	h#{$i} {
+		color: $textColor;
+	}
 }
 
 .info {
@@ -54,10 +58,15 @@ h3 {
 		font-size: 18px;
 	}
 
+	p {
+
+	}
+
 	@for $i from 1 through 6 {
 		h#{$i} {
 			white-space: nowrap;
 			margin: 15 - ($i * 3px);
+			font-size: 36 - ($i * 2px);
 		}
 	}
 }
@@ -75,10 +84,15 @@ h3 {
 		font-size: 15px;
 	}
 
+	p {
+
+	}
+
 	@for $i from 1 through 6 {
 		h#{$i} {
 			white-space: nowrap;
 			margin: 10 - ($i * 2px);
+			font-size: 34 - ($i * 2px);
 		}
 	}
 }

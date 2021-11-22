@@ -1,7 +1,6 @@
 import './Home.scss';
 
 import React from "react";
-
 import { FormattedMessage } from 'react-intl';
 
 import Constants from "../../../shared/utils/Constants";
@@ -18,13 +17,13 @@ export default function Home() {
                         <FormattedMessage id="greetings" defaultMessage={`${Constants.GREETINGS}`} />
                     </h1>
                 </div>
-                <div className={""}>
+                <div className={"mt-3"}>
                     <div className="typewriter">
                         <h3><FormattedMessage id="role" defaultMessage={`${Constants.ROLE}`} /></h3>
                     </div>
                 </div>
-                <div className={""}>
-                    <SquareButton title={"explore"} defaultTitle={Constants.EXPLORE} link={Constants.WORKS_LINK}  />
+                <div className={"mt-3"}>
+                    <SquareButton title={"explore"} style={"fill"} defaultTitle={Constants.EXPLORE} link={Constants.WORKS_LINK}  />
                 </div>
             </section>
         </>);

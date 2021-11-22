@@ -1,3 +1,6 @@
+@import '../../assets/styles/Variables.scss';
+
+
 .overlay {
     top: 0;
     right: 0;
@@ -54,7 +57,7 @@
 }
 
 .overlay a:hover, .overlay a:focus {
-    color: #F1F1F1;
+    color: $whiteColor;
 }
 
 .overlay .closebtn {

@@ -1,13 +1,11 @@
 .title {
     margin: 0;
     font-size: 50px;
-    padding: 0 2rem;
     text-align: start;
 }
 
 .subtitle {
     font-size: 20px;
-    padding: 0 2rem;
     margin: 10px 0 0;
     text-align: start;
 }
@@ -24,7 +22,6 @@
 @media only screen and (max-width: 414px) {
     .title {
         font-size: 45px;
-        padding-left: 2rem;
     }
 
     .subtitle {
@@ -41,7 +38,6 @@
 @media only screen and (max-width: 375px) {
     .title {
         font-size: 35px;
-        padding-left: 2rem;
     }
 
     .subtitle {
@@ -58,12 +54,10 @@
 @media only screen and (max-width: 320px) {
     .title {
         font-size: 35px;
-        padding-left: 2rem;
     }
 
     .subtitle {
         font-size: 13px;
-        padding: 0 2rem;
         line-height: 1.4;
     }
 }

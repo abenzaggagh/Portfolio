@@ -1,0 +1,21 @@
+@import "../../../../../assets/styles/Variables";
+
+p {
+    color: $textColor;
+}
+
+.exp-date {
+    font-weight: 700;
+    font-size: 28px;
+}
+
+.exp-title {
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.exp-subtitle {
+    margin: 10px auto;
+    font-size: 24px;
+    font-weight: 300;
+}
