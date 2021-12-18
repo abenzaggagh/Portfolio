@@ -46,6 +46,8 @@ import Discipline from "../../assets/images/soft-skills/discipline.svg"
 
 export default class Constants {
 
+    static MY_AGE = new Date().getFullYear() - 1998;
+
     static GREETINGS = "Hello, I'm Amine!";
     static ROLE = "Hello, I'm Amine!";
     static EXPLORE = "Explore Work";
