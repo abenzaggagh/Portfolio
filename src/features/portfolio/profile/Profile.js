@@ -57,14 +57,17 @@ export default function Profile() {
                     <h3 className={"mb-3"}>
                         <FormattedMessage id="about_me" defaultMessage={``} />
                     </h3>
-                    <p><FormattedMessage id="profile_1_line" /></p>
+                    <p><FormattedMessage id="profile_1_line" /> {Constants.CURRENT_LOCATION.city}, {Constants.CURRENT_LOCATION.country}.</p>
                     <p><FormattedMessage id="profile_2_line" /></p>
                     <p><FormattedMessage id="profile_3_line" /></p>
                     <p><FormattedMessage id="profile_4_line" /></p>
+                    <p><FormattedMessage id="profile_5_line" /></p>
                     <p>
                         <FormattedMessage id="currently_working" defaultMessage={``} />
                         <Link to={{ pathname: `${Constants.CURRENT_COMPANY.link}` }} target="_blank">
-                            <FormattedMessage id="current_company" defaultMessage={`${Constants.CURRENT_COMPANY.name}`} />.
+                            <div className={"company-link"} style={{color: `${Constants.CURRENT_COMPANY.color}`}}>
+                                <FormattedMessage id="current_company" defaultMessage={`${Constants.CURRENT_COMPANY.name}`} />.
+                            </div>
                         </Link>
                     </p>
                 </div>

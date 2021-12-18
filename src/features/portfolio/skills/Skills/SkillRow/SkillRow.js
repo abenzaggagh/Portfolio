@@ -1,5 +1,5 @@
 import {FormattedMessage} from "react-intl";
-import SkillIcon from "./SkillIcons/SkillIcon";
+import SkillIcon from "../SkillIcons/SkillIcon";
 
 export default function SkillRow(props) {
     return (<>

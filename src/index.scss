@@ -20,7 +20,7 @@ $width: calc(100vh - 18vh);
 main {
 	height: $width;
 	display: flex;
-	overflow: scroll;
+	overflow: overlay;
 	flex-direction: column;
 }
 
@@ -32,6 +32,7 @@ main {
 	h#{$i} {
 		white-space: nowrap;
 		margin: 30 - ($i * 5px);
+		font-size: $baseFontSize - ((1.5 * $headingScale) * ($i - 1));
 	}
 }
 

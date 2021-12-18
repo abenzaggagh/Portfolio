@@ -1,14 +1,15 @@
-import './Skills.scss';
+import './SkillsExperiences.scss';
 
 import { FormattedMessage } from "react-intl";
 
 import SquareButton from "../../../shared/buttons/square-btn/SquareButton";
 
 import Constants from "../../../shared/utils/Constants";
-import SkillRow from "./SkillRow/SkillRow";
+
+import Skills from "./Skills/Skills";
 import Experiences from "./Experience/Experiences";
 
-export default function Skills() {
+export default function SkillsExperiences() {
     return (
         <>
             <div className={"container"}>
@@ -19,23 +20,10 @@ export default function Skills() {
                     </h1>
                 </div>
 
-                <SkillRow skill_title={"skills_front_end_title"}
-                          skill_subtitle={"skills_front_end_line"}
-                          skills={Constants.FRONT_END_SKILLS}/>
-
-                <SkillRow skill_title={"skills_back_end_title"}
-                          skill_subtitle={"skills_back_end_line"}
-                          skills={Constants.BACK_END_SKILLS}/>
-
-                <SkillRow skill_title={"skills_others_title"}
-                          skill_subtitle={"skills_others_line"}
-                          skills={Constants.OTHERS_SKILLS}/>
-
-                <SkillRow skill_title={"skills_soft_title"}
-                          skills={Constants.SOFT_SKILLS} />
+                <Skills skills={Constants.LIST_OF_SKILLS} />
 
                 <Experiences title={"experience_title"}
-                    experiences={Constants.EXPERIENCES} />
+                    experiences={Constants.LIST_OF_EXPERIENCES} />
 
                 <div className={"row mt-5 mb-4"}>
                     <div className={"col-6"}>

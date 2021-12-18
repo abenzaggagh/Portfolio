@@ -12,12 +12,15 @@
     "currently_reading": "Currently, I'm reading",
 
     "career_goals_line": "Become a tech lead and then an architect in developing large scale enterprise applications using the recent technologies.",
-    "currently_working": "Currently working as a Research and Development Engineer at ",
+    "currently_working": "Currently working as a Software Engineer at ",
 
-    "profile_1_line": "My name is Amine BEN ZAGGAGH, 23 years old and I'm a full-stack software engineer based in Casablanca, Morocco.",
+    "profile_1_line": "My name is Amine BEN ZAGGAGH, 23 years old and I'm a full-stack software engineer based in ",
     "profile_2_line": "I write code and develop web and mobile applications for both iOS and Android operating system.",
     "profile_3_line": "I focus on writing clean, elegant and efficient code.",
     "profile_4_line": "I love programming, traveling and reading books!",
+
+    "profile_5_line": "On my previous work experience, I was a full-stack software developer at Docaposte working on the Tribunal Digital.",
+    "profile_6_line": " I really enjoyed working with them. At the same time, sometimes I had to put my work first, and make sure that I completed what I needed to do. So, I would say that they would describe me as disciplined, but friendly and supportive..",
 
     "skills_title": "Skills & Experiences",
     "experience_title": "Experiences",

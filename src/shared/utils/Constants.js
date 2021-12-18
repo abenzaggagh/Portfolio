@@ -104,9 +104,20 @@ export default class Constants {
         default: Constants.ARABIC
     }]
 
-    static CURRENT_COMPANY = {
+    static CURRENT_LOCATION = {
+        city: "Rabat",
+        country: "Morocco"
+    }
+
+    static LAST_COMPANY = {
         name: "Docaposte",
         link: "https://docaposte.fr/"
+    }
+
+    static CURRENT_COMPANY = {
+        color: "#FF7800",
+        name: "Orange Business Services",
+        link: "https://www.orange-business.com/fr"
     }
 
     static FRONT_END_SKILLS = [
@@ -209,31 +220,142 @@ export default class Constants {
         }
     ];
 
-    static EXPERIENCES = [
+
+    static LIST_OF_SKILLS = [
         {
-            "fromDate": "exp_1_from_date",
-            "toDate": "exp_1_to_date",
-            "role": "exp_1_role",
-            "company": "exp_1_company",
-            "tasks": [
+            skill_title: "skills_front_end_title",
+            skill_subtitle: "skills_front_end_line",
+            skills: [
+                {
+                    title: "HTML & CSS",
+                    images: [
+                        {src: HTML, alt: "HTML Logo"},
+                        {src: CSS, alt: "CSS Logo"}
+                    ]
+                }, {
+                    title: "SASS & LESS",
+                    images: [
+                        {src: SASS, alt: "SASS Logo"},
+                        {src: LESS, alt: "LESS Logo"}
+                    ]
+                }, {
+                    title: "JavaScript & TypeScript",
+                    images: [
+                        {src: JavaScript, alt: "JavaScript Logo"},
+                        {src: TypeScript, alt: "TypeScript Logo"}
+                    ]
+                }, {
+                    title: "Angular & React",
+                    images: [
+                        {src: Angular, alt: "Angular Logo"},
+                        {src: React, alt: "React Logo"}
+                    ]
+                }
+            ]
+        }, {
+            skill_title: "skills_back_end_title",
+            skill_subtitle: "skills_back_end_line",
+            skills: [{
+                title: "Java & Spring",
+                images: [
+                    {src: Java, alt: "Java Logo"},
+                    {src: Spring, alt: "Spring Logo"}
+                ]
+            }, {
+                title: "NodeJS & Express",
+                images: [
+                    {src: NodeJS, alt: "NodeJS Logo"},
+                    {src: Express, alt: "Express Logo"}
+                ]
+            }, {
+                title: "PHP & Laravel",
+                images: [
+                    {src: PHP, alt: "PHP Logo"},
+                    {src: Laravel, alt: "Laravel Logo"},
+                ]
+            }, {
+                title: "Swift",
+                images: [
+                    {src: Swift, alt: "Swift Logo"},
+                ]
+            }
+            ]
+        }, {
+            skill_title: "skills_others_title",
+            skill_subtitle: "skills_others_line",
+            skills: [{
+                title: "MySQL, PostgreSQL, Oracle & MongoDB",
+                images: [
+                    {src: MySQL, alt: "MySQL Logo"},
+                    {src: PostgreSQL, alt: "PostgreSQL Logo"},
+                    {src: Oracle, alt: "Oracle Logo", width: "4em"},
+                    {src: MongoDB, alt: "MongoDB Logo"}
+                ]
+            }, {
+                title: "Git, GitHub & GitLab",
+                images: [
+                    {src: Git, alt: "Git Logo"},
+                    {src: Github, alt: "GitHub Logo"},
+                    {src: Gitlab, alt: "GitLab Logo"}
+                ]
+            }
+            ]
+        }, {
+            skill_title: "skills_soft_title",
+            skill_subtitle: "",
+            skills: [{
+                title: "Analyzing Information",
+                images: [
+                    {src: Analysing, alt: "Analysing Logo"}
+                ]
+            },
+                {
+                    title: "Discipline",
+                    images: [
+                        {src: Discipline, alt: "Discipline Logo"}
+                    ]
+                }, {
+                    title: "Problem Solving",
+                    images: [
+                        {src: Abacus, alt: "Abacus Logo"}
+                    ]
+                }, {
+                    title: "Teamwork",
+                    images: [
+                        {src: Teamwork, alt: "Teamwork Logo"}
+                    ]
+                }
+            ]
+        }
+    ];
+
+    static LIST_OF_EXPERIENCES = [
+        {
+            fromDate: "exp_1_from_date",
+            toDate: "exp_1_to_date",
+            role: "exp_1_role",
+            company: "exp_1_company",
+            tasks: [
                 "exp_1_task_1", "exp_1_task_2", "exp_1_task_3", "exp_1_task_4"
             ]
         },  {
-            "fromDate": "exp_2_from_date",
-            "toDate": "exp_2_to_date",
-            "role": "exp_2_role",
-            "company": "exp_2_company",
-            "tasks": [
+            fromDate: "exp_2_from_date",
+            toDate: "exp_2_to_date",
+            role: "exp_2_role",
+            company: "exp_2_company",
+            tasks: [
                 "exp_2_task_1", "exp_2_task_2", "exp_2_task_3"
             ]
         }, {
-            "fromDate": "exp_3_from_date",
-            "toDate": "exp_3_to_date",
-            "role": "exp_3_role",
-            "company": "exp_3_company",
-            "tasks": []
+            fromDate: "exp_3_from_date",
+            toDate: "exp_3_to_date",
+            role: "exp_3_role",
+            company: "exp_3_company",
+            tasks: []
         }
     ];
+
+    static PROJECTS_TECHNOLOGIES = ["Java", "iOS", "JavaScript"]
 
     static FOOTER = [{
         title: 'GitHub',

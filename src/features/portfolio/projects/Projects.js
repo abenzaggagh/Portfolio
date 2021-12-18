@@ -5,7 +5,7 @@ import React, { useEffect, useState } from "react";
 import ProjectRow from "./ProjectRow/ProjectRow";
 
 import Firestore from "../../../utils/firestore";
-import {FormattedMessage} from "react-intl";
+import { FormattedMessage } from "react-intl";
 
 import { collection, getDocs } from "firebase/firestore";
 
@@ -32,7 +32,21 @@ export default function Projects() {
                 <h1 className={"title"}>
                     <FormattedMessage id={"projects"} defaultMessage={Constants.PROJECTS} />
                 </h1>
-                <p className={"subtitle"}><FormattedMessage id={"project_subtitle"} defaultMessage={Constants.PROJECT_SUBTITLE} /></p>
+
+                <div>
+                    <p className={"subtitle"}>
+                        <FormattedMessage id={"project_subtitle"} defaultMessage={Constants.PROJECT_SUBTITLE} />
+                    </p>
+                </div>
+
+                {/* <div className={"row mt-4"}>
+                    { Constants.PROJECTS_TECHNOLOGIES.map(technology =>
+                        <div className={"col"}>
+                            <button className={""}>{ technology }</button>
+                        </div>
+                    )}
+                </div> */}
+
                 <div className={"fluid-container m-5 scroll-bounce"}>
                     { projects.map(project => <ProjectRow key={project.id}
                                                           link={project.link}

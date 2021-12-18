@@ -5,10 +5,12 @@ import Constants from "../../../shared/utils/Constants";
 
 export default function Blog() {
     return (
-        <div>
+        <div className={"container"}>
             <Alert className="info">
                 <FormattedMessage id="under_construction" defaultMessage={`${Constants.UNDER_CONSTRUCTION}`} />
             </Alert>
-            <h1><FormattedMessage id="blog" defaultMessage={`${Constants.BLOG}`} /></h1>
+            <h1>
+                <FormattedMessage id="blog" defaultMessage={`${Constants.BLOG}`} />
+            </h1>
         </div>)
 }

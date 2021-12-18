@@ -10,7 +10,6 @@ import Portfolio from "./features/portfolio/Portfolio";
 import PrivatePortfolio from "./features/privatePortfolio/PrivatePortfolio";
 
 
-
 const logVisit = () => {
     addDoc(collection(Firestore, "Visitors"), {
         visitedAt: new Date()

@@ -1,4 +1,5 @@
 import './ProjectRow.scss';
+
 import Constants from "../../../../shared/utils/Constants";
 
 export default function ProjectRow(props) {

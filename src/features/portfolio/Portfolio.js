@@ -6,7 +6,7 @@ import Home from "./home/Home";
 import Blog from "./blog/Blog";
 import Projects from "./projects/Projects";
 import Profile from "./profile/Profile";
-import Skills from "./skills/Skills";
+import SkillsExperiences from "./skills/SkillsExperiences";
 
 import Header from "../../shared/header/Header";
 import Overlay from "../../shared/overlay/Overlay";
@@ -34,7 +34,7 @@ export default function Portfolio() {
                         <Profile />
                     </Route>
                     <Route path="/skills">
-                        <Skills />
+                        <SkillsExperiences />
                     </Route>
                 </Switch>
             </main>

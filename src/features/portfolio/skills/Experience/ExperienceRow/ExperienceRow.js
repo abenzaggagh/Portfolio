@@ -25,11 +25,11 @@ export default function ExperienceRow(props) {
             </div>
             <div className={"col-sm-4"}>
                 <ul>
-                    {props.experience.tasks.map(task => <li>
+                    { props.experience.tasks.map(task => <li>
                         <p className={"exp-body"}>
                             <FormattedMessage id={`${task}`} defaultMessage={`${task}`} />
                         </p>
-                    </li>)}
+                    </li>) }
                 </ul>
             </div>
         </div>
