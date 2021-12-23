@@ -12,15 +12,19 @@ html body {
 	margin: 0;
 	width: 100%;
 	display: inline;
+	overflow: hidden;
 	@include background-gradient();
 }
 
 $width: calc(100vh - 18vh);
 
+$overflow: scroll;
+
 main {
 	height: $width;
 	display: flex;
-	overflow: overlay;
+	overflow-x: hidden;
+	overflow-y: $overflow;
 	flex-direction: column;
 }
 

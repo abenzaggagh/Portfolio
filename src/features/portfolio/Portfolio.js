@@ -11,6 +11,7 @@ import SkillsExperiences from "./skills/SkillsExperiences";
 import Header from "../../shared/header/Header";
 import Overlay from "../../shared/overlay/Overlay";
 import Footer from "../../shared/footer/Footer";
+import NotFound from "../../shared/notFound/NotFound";
 
 
 export default function Portfolio() {
@@ -36,6 +37,7 @@ export default function Portfolio() {
                     <Route path="/skills">
                         <SkillsExperiences />
                     </Route>
+                    <Route path='*' exact={true} component={NotFound} />
                 </Switch>
             </main>
             <Overlay overlay={overlay} closeOverlay={() => setOverlay(false)} />

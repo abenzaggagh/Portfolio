@@ -5,6 +5,7 @@ import LinkedIn from '../../assets/images/linkedin.svg';
 import Facebook from '../../assets/images/facebook.svg';
 
 import MEMOJI from '../../assets/images/Image.png';
+import NOT_FOUND_MEMOJI from '../../assets/images/NotFound.png';
 
 
 import HTML from "../../assets/images/logos/html.svg";
@@ -48,6 +49,8 @@ export default class Constants {
 
     static MY_AGE = new Date().getFullYear() - 1998;
 
+    static HOMEPAGE = "Go to Homepage";
+
     static GREETINGS = "Hello, I'm Amine!";
     static ROLE = "Hello, I'm Amine!";
     static EXPLORE = "Explore Work";
@@ -67,6 +70,8 @@ export default class Constants {
     static PROJECT_SUBTITLE = "See my works below, all their back-end and front-end parts were completely done by me.";
 
     static MEMOJI = MEMOJI;
+
+    static NOT_FOUND_MEMOJI = NOT_FOUND_MEMOJI;
 
     static SWIFT_LOGO = Swift;
 

@@ -14,7 +14,7 @@
     "currently_working": "Actuellement j'occupe le poste d'Ingénieur Recherche et Développement chez ",
     "career_goals_line": "Devenez un Tech-lead puis un architecte dans le développement des applications d'entreprise à grande échelle en utilisant les technologies récentes.",
 
-    "profile_1_line": "Je m'appelle Amine BEN ZAGGAGH, 23 ans et je suis un ingénieur logiciel full-stack basé à Casablanca, Maroc.",
+    "profile_1_line": "Je m'appelle Amine BEN ZAGGAGH, {Age} ans et je suis un ingénieur logiciel full-stack basé à {City}, {Country}.",
     "profile_2_line": "Je développe des applications Web et mobiles pour les systèmes d'exploitation iOS et Android.",
     "profile_3_line": "Je me concentre sur le développement d'un code propre, élégant et efficace.",
     "profile_4_line": "J'aime programmer, voyager, et lire des livres!",

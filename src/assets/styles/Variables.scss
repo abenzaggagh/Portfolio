@@ -1,8 +1,36 @@
 // Variables
+/*
 
+// Text Colors
+$whiteColor: #FFFFFF;
+$textColor: #FCFCFC;
+$cursorColor: #bdbdbd;
 
+// Background Colors
+$navyBlue: #23395D;
+$darkBlue: #203354;
+$royalBlue: #1C2E4A;
+$mediumBlue: #192541;
+$midnightBlue: #0c0c0c;
+----------------------------
+// Text Colors
+$whiteColor: #000;
+$blackColor: #000;
+
+$textColor: #000;
+$cursorColor: #bdbdbd;
+
+// Background Colors
+$navyBlue: #23395D;
+$darkBlue: #203354;
+$royalBlue: #1C2E4A;
+$mediumBlue: #192541;
+$midnightBlue: #fff;
+
+*/
 // Colors
 // $orangeColor: #FF7900;
+// --TODO: Change the variable to be more theme dependant
 $orangeColor: rgba(255, 120, 0, 0.8);
 $darkOrangeColor: rgba(255, 120, 0, 1); // #FF7800
 
@@ -20,6 +48,7 @@ $midnightBlue: #0c0c0c;
 
 
 // Fonts Sizes
+// --TODO: Add all the list of fonts for desktop, tablet and mobile
 $headingFontSize: 13px;
 
 $bodyFontSize: 13px;
