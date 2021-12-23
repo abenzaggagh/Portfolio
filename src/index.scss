@@ -16,9 +16,15 @@ html body {
 	@include background-gradient();
 }
 
-$width: calc(100vh - 18vh);
+p {
+	color: $textColor;
+}
 
-$overflow: scroll;
+@for $i from 1 through 6 {
+	h#{$i} {
+		color: $textColor;
+	}
+}
 
 main {
 	height: $width;
@@ -36,7 +42,7 @@ main {
 	h#{$i} {
 		white-space: nowrap;
 		margin: 30 - ($i * 5px);
-		font-size: $baseFontSize - ((1.5 * $headingScale) * ($i - 1));
+		// font-size:: $baseFontSize - ((1.5 * $headingScale) * ($i - 1));
 	}
 }
 

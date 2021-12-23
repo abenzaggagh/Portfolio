@@ -1,26 +1,17 @@
 @import 'index.scss';
 
 h1 {
-	font-weight: 100;
+	// // font-weight: 100;
 	text-align: center;
+	font-size: 3.75rem;
 	font-family: 'ZenTokyoZoo', serif;
 }
 
 h3 {
-	font-weight: 100;
+	// // font-weight: 100;
 	font-family: 'Mukta-Light', serif;
 }
 
-@for $i from 1 through 6 {
-	h#{$i} {
-		color: $textColor;
-	}
-}
-
-.info {
-	margin: 20px;
-	background: yellow;
-}
 
 /**
  * Width
@@ -28,11 +19,11 @@ h3 {
  */
 @media only screen and (max-width: 414px) {
 	h1 {
-		font-size: 36px;
+		// font-size: 36px;
 	}
 
 	h3 {
-		font-size: 20px;
+		// font-size: 20px;
 	}
 
 	@for $i from 1 through 6 {
@@ -49,11 +40,11 @@ h3 {
  */
 @media only screen and (max-width: 375px) {
 	h1 {
-		font-size: 34px;
+		// font-size: 34px;
 	}
 
 	h3 {
-		font-size: 18px;
+		// font-size: 18px;
 	}
 
 	p {
@@ -64,7 +55,7 @@ h3 {
 		h#{$i} {
 			white-space: nowrap;
 			margin: 15 - ($i * 3px);
-			font-size: 36 - ($i * 2px);
+			// font-size:: 36 - ($i * 2px);
 		}
 	}
 }
@@ -75,11 +66,11 @@ h3 {
  */
 @media only screen and (max-width: 320px) {
 	h1 {
-		font-size: 32px;
+		// font-size:: 32px;
 	}
 
 	h3 {
-		font-size: 15px;
+		// font-size:: 15px;
 	}
 
 	p {
@@ -90,7 +81,7 @@ h3 {
 		h#{$i} {
 			white-space: nowrap;
 			margin: 10 - ($i * 2px);
-			font-size: 34 - ($i * 2px);
+			// font-size:: 34 - ($i * 2px);
 		}
 	}
 }
