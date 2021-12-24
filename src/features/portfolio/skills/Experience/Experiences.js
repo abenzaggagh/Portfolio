@@ -5,9 +5,9 @@ export default function Experiences(props) {
     return (<div className={"row mt-4"}>
         <div>
             <div className={"mt-2"}>
-                <h3>
+                <h1 className="title">
                     <FormattedMessage id={`${props.title}`} defaultMessage={""} />
-                </h3>
+                </h1>
             </div>
 
             <div className={"mt-3"}>

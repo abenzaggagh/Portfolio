@@ -16,14 +16,17 @@ html body {
 	@include background-gradient();
 }
 
-p {
-	color: $textColor;
-}
-
 @for $i from 1 through 6 {
 	h#{$i} {
+		margin: unset;
+		font-size: unset;
 		color: $textColor;
+		white-space: nowrap;
 	}
+}
+
+p {
+	color: $textColor;
 }
 
 main {
@@ -36,14 +39,6 @@ main {
 
 #root {
 	height: 100vh;
-}
-
-@for $i from 1 through 6 {
-	h#{$i} {
-		white-space: nowrap;
-		margin: 30 - ($i * 5px);
-		// font-size:: $baseFontSize - ((1.5 * $headingScale) * ($i - 1));
-	}
 }
 
 .bubbles {
