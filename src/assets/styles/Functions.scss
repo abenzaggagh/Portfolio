@@ -1,4 +1,4 @@
-@import './Variables';
+@import './theme/Colors';
 
 // Functions
 @function random_range($min, $max) {
@@ -31,7 +31,7 @@
 }
 
 // Mixin
-@mixin background-gradient() {
+@mixin background-gradient($backgroundColor) {
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $backgroundColor));
 }
 

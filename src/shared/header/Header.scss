@@ -23,7 +23,7 @@ header {
 }
 
 .icon:hover {
-    background-color: $orangeColor;
+    background-color: $primaryColor;
 }
 
 .menu {
@@ -38,7 +38,7 @@ header {
     margin-bottom: 6px;
     position: relative;
     border-radius: 40px;
-    background: $whiteColor;
+    background: $textColor;
 }
 
 #header span:first-child {

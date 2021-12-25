@@ -9,7 +9,7 @@
 .center {
     height: 65px;
     display: flex;
-    color: $whiteColor;
+    color: $textColor;
     position: relative;
     text-align: center;
     align-items: center;
@@ -71,12 +71,12 @@ button {
 }
 
 $colors:
-        "up" $whiteColor $darkOrangeColor $whiteColor,         // OK
-        "fill" $whiteColor $darkOrangeColor $whiteColor,       // OK
-        "slide" $whiteColor $darkOrangeColor $whiteColor,      // OK
-        "offset" $whiteColor $darkOrangeColor $whiteColor,     // OK
-        "pulse" $whiteColor $darkOrangeColor $darkOrangeColor, // OK
-        "raise" $whiteColor $darkOrangeColor $darkOrangeColor; // OK
+        "up" $textColor $darkOrangeColor $textColor,         // OK
+        "fill" $textColor $darkOrangeColor $textColor,       // OK
+        "slide" $textColor $darkOrangeColor $textColor,      // OK
+        "offset" $textColor $darkOrangeColor $textColor,     // OK
+        "pulse" $textColor $darkOrangeColor $darkOrangeColor, // OK
+        "raise" $textColor $darkOrangeColor $darkOrangeColor; // OK
 
 @keyframes pulse {
     0% { box-shadow: 0 0 0 0 var(--hover); }

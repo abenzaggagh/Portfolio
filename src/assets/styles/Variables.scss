@@ -9,21 +9,7 @@ $width: calc(100vh - 18vh);
 $bubble-count: 25;
 $sway-type: "sway-left-to-right", "sway-right-to-left";
 
-// Colors
-$whiteColor: #FFFFFF;
-$blackColor: #000000;
-
-$orangeColor: rgba(255, 120, 0, 0.8);   // #FF7900
-$darkOrangeColor: rgba(255, 120, 0, 1); // #FF7800
-
-$primaryColor: $orangeColor;
-$primaryVariantColor: $darkOrangeColor;
-
-$secondaryColor: #000;
-$secondaryVariantColor: #000;
-
-$textColor: $whiteColor;
-$backgroundColor: $blackColor;
+@import "theme/DarkTheme";
 
 // --TODO: Add all the list of fonts for desktop, tablet and mobile.
 
