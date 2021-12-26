@@ -1,8 +1,17 @@
-import Mail from '../../assets/images/mail.svg';
-import GitHub from '../../assets/images/github.svg';
-import Twitter from '../../assets/images/twitter.svg';
-import LinkedIn from '../../assets/images/linkedin.svg';
-import Facebook from '../../assets/images/facebook.svg';
+import Mail from '../../assets/images/footer/dark/mail.svg';
+import MailLight from '../../assets/images/footer/light/mail.svg';
+
+import GitHub from '../../assets/images/footer/dark/github.svg';
+import GitHubLight from '../../assets/images/footer/light/github.svg';
+
+import Twitter from '../../assets/images/footer/dark/twitter.svg';
+import TwitterLight from '../../assets/images/footer/light/twitter.svg';
+
+import LinkedIn from '../../assets/images/footer/dark/linkedin.svg';
+import LinkedInLight from '../../assets/images/footer/light/linkedin.svg';
+
+import Facebook from '../../assets/images/footer/dark/facebook.svg';
+import FacebookLight from '../../assets/images/footer/light/facebook.svg';
 
 import MEMOJI from '../../assets/images/Image.png';
 import NOT_FOUND_MEMOJI from '../../assets/images/NotFound.png';
@@ -373,26 +382,31 @@ export default class Constants {
         title: 'GitHub',
         link: 'https://github.com/abenzaggagh',
         image: GitHub,
+        imageLight: GitHubLight,
         alternative: 'github-logo'
     }, {
         title: 'LinkedIn',
         link: 'https://linkedin.com/in/abenzaggagh',
         image: LinkedIn,
+        imageLight: LinkedInLight,
         alternative: 'linkedin-logo'
     }, {
         title: 'Facebook',
         link: 'https://twitter.com/abenzaggagh',
         image: Twitter,
+        imageLight: TwitterLight,
         alternative: 'twitter-logo'
     }, {
         title: 'Facebook',
         link: 'https://facebook.com/abenzaggagh',
         image: Facebook,
+        imageLight: FacebookLight,
         alternative: 'facebook-logo'
     }, {
         title: 'Mail',
         link: 'mailto:amine.benzaggagh@icloud.com',
         image: Mail,
+        imageLight: MailLight,
         alternative: 'mail-logo'
     }];
 

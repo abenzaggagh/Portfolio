@@ -55,6 +55,6 @@ export default function Portfolio() {
                 </Switch>
             </main>
             <Overlay overlay={overlay} closeOverlay={() => setOverlay(false)} />
-            <Footer/>
+            <Footer theme={theme} />
         </div>);
 }
