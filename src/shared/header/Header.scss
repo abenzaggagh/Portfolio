@@ -26,6 +26,29 @@ header {
     background-color: $primaryColor;
 }
 
+.theme-changer {
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 10vh;
+    height: 10vh;
+    cursor: pointer;
+    position: fixed;
+    text-align: center;
+    display: inline-flex;
+    background-color: transparent;
+    transition: background-color 300ms ease;
+}
+
+.theme-changer-icon svg path {
+    color: var(--textColor);
+    fill:  var(--textColor);
+}
+
+.theme-changer-icon:hover {
+
+}
+
 .menu {
     margin: auto;
     display: inline-block;

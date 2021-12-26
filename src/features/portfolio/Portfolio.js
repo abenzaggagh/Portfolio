@@ -15,8 +15,6 @@ import Overlay from "../../shared/overlay/Overlay";
 import Footer from "../../shared/footer/Footer";
 import NotFound from "../../shared/notFound/NotFound";
 
-require('../../../src/assets/styles/theme/LightTheme.scss');
-
 export default function Portfolio() {
 
     const [theme, setTheme] = useContext(ThemeContext);
@@ -24,18 +22,18 @@ export default function Portfolio() {
     const [overlay, setOverlay] = useState(false);
 
     const toggleTheme = (theme) => {
-        setTheme("light")
-        localStorage.setItem('theme', "light")
         if (theme === "light") {
-            setTheme("dark")
-            localStorage.setItem('theme', "dark")
-            require('../../../src/assets/styles/theme/LightTheme.scss');
+            setTheme("dark");
+            localStorage.setItem('theme', "dark");
+        } else if (theme === "dark") {
+            setTheme("light")
+            localStorage.setItem('theme', "light");
         }
     }
 
     return (
         <div className="fluid-container dark-theme">
-            <Header toggleThemeMode={() => { toggleTheme(theme) }} openOverlay={() => { setOverlay(true) }} />
+            <Header theme={theme} toggleThemeMode={() => { toggleTheme(theme) }} openOverlay={() => { setOverlay(true) }} />
             <main>
                 <Switch>
                     <Route exact path="/">

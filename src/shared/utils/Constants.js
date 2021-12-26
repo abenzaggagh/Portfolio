@@ -7,6 +7,8 @@ import Facebook from '../../assets/images/facebook.svg';
 import MEMOJI from '../../assets/images/Image.png';
 import NOT_FOUND_MEMOJI from '../../assets/images/NotFound.png';
 
+import SUN from '../../assets/images/theme/sun.svg';
+import MOON from '../../assets/images/theme/moon.svg';
 
 import HTML from "../../assets/images/logos/html.svg";
 import CSS from "../../assets/images/logos/css.svg";
@@ -48,6 +50,9 @@ import Discipline from "../../assets/images/soft-skills/discipline.svg"
 export default class Constants {
 
     static MY_AGE = new Date().getFullYear() - 1998;
+
+    static SUN = SUN;
+    static MOON = MOON;
 
     static HOMEPAGE = "Go to Homepage";
 

@@ -1,5 +1,10 @@
 @import 'index.scss';
 
+root {
+	textColor: #FFF;
+	backgroundColor: #000;
+}
+
 h1 {
 	font-size: $heading1FontSize;
 	font-weight: $heading1FontWeight;
@@ -34,6 +39,10 @@ h6 {
 	font-size: $heading6FontSize;
 	font-weight: $heading6FontWeight;
 	letter-spacing: $heading6LetterSpacing;
+}
+
+p {
+	color: var(--textColor)
 }
 
 /**
