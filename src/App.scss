@@ -1,25 +1,48 @@
 @import 'index.scss';
 
+root {
+	textColor: #FFF;
+	backgroundColor: #000;
+}
+
 h1 {
-	font-weight: 100;
-	text-align: center;
-	font-family: 'ZenTokyoZoo', serif;
+	font-size: $heading1FontSize;
+	font-weight: $heading1FontWeight;
+	letter-spacing: $heading1LetterSpacing;
+}
+
+h2 {
+	font-size: $heading2FontSize;
+	font-weight: $heading2FontWeight;
+	letter-spacing: $heading2LetterSpacing;
 }
 
 h3 {
-	font-weight: 100;
-	font-family: 'Mukta-Light', serif;
+	font-size: $heading3FontSize;
+	font-weight: $heading3FontWeight;
+	letter-spacing: $heading3LetterSpacing;
 }
 
-@for $i from 1 through 6 {
-	h#{$i} {
-		color: $textColor;
-	}
+h4 {
+	font-size: $heading4FontSize;
+	font-weight: $heading4FontWeight;
+	letter-spacing: $heading4LetterSpacing;
 }
 
-.info {
-	margin: 20px;
-	background: yellow;
+h5 {
+	font-size: $heading5FontSize;
+	font-weight: $heading5FontWeight;
+	letter-spacing: $heading5LetterSpacing;
+}
+
+h6 {
+	font-size: $heading6FontSize;
+	font-weight: $heading6FontWeight;
+	letter-spacing: $heading6LetterSpacing;
+}
+
+p {
+	color: var(--textColor)
 }
 
 /**
@@ -28,11 +51,11 @@ h3 {
  */
 @media only screen and (max-width: 414px) {
 	h1 {
-		font-size: 36px;
+		// font-size: 36px;
 	}
 
 	h3 {
-		font-size: 20px;
+		// font-size: 20px;
 	}
 
 	@for $i from 1 through 6 {
@@ -49,11 +72,11 @@ h3 {
  */
 @media only screen and (max-width: 375px) {
 	h1 {
-		font-size: 34px;
+		// font-size: 34px;
 	}
 
 	h3 {
-		font-size: 18px;
+		// font-size: 18px;
 	}
 
 	p {
@@ -64,7 +87,7 @@ h3 {
 		h#{$i} {
 			white-space: nowrap;
 			margin: 15 - ($i * 3px);
-			font-size: 36 - ($i * 2px);
+			// font-size:: 36 - ($i * 2px);
 		}
 	}
 }
@@ -75,11 +98,11 @@ h3 {
  */
 @media only screen and (max-width: 320px) {
 	h1 {
-		font-size: 32px;
+		// font-size:: 32px;
 	}
 
 	h3 {
-		font-size: 15px;
+		// font-size:: 15px;
 	}
 
 	p {
@@ -90,7 +113,7 @@ h3 {
 		h#{$i} {
 			white-space: nowrap;
 			margin: 10 - ($i * 2px);
-			font-size: 34 - ($i * 2px);
+			// font-size:: 34 - ($i * 2px);
 		}
 	}
 }

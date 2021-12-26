@@ -1,4 +1,4 @@
-@import './Variables';
+@import './theme/Colors';
 
 // Functions
 @function random_range($min, $max) {
@@ -27,12 +27,12 @@
 
 @keyframes blink-caret {
   from, to { border-color: transparent }
-  50% { border-color: $cursorColor; }
+  50% { border-color: $whiteColor; }
 }
 
 // Mixin
-@mixin background-gradient() {
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $midnightBlue));
+@mixin background-gradient($backgroundColor) {
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $backgroundColor));
 }
 
 @mixin center() {    

@@ -14,16 +14,9 @@ export default function SkillsExperiences() {
         <>
             <div className={"container"}>
 
-                <div className={"mb-4"}>
-                    <h1 className="title">
-                        <FormattedMessage id={"skills_title"} defaultMessage={""} />
-                    </h1>
-                </div>
+                <Skills title={"skills_title"} skills={Constants.LIST_OF_SKILLS} />
 
-                <Skills skills={Constants.LIST_OF_SKILLS} />
-
-                <Experiences title={"experience_title"}
-                    experiences={Constants.LIST_OF_EXPERIENCES} />
+                <Experiences title={"experience_title"} experiences={Constants.LIST_OF_EXPERIENCES} />
 
                 <div className={"row mt-5 mb-4"}>
                     <div className={"col-6"}>

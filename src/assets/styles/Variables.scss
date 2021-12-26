@@ -1,62 +1,81 @@
 // Variables
-/*
 
-// Text Colors
-$whiteColor: #FFFFFF;
-$textColor: #FCFCFC;
-$cursorColor: #bdbdbd;
+$overflow: scroll;
 
-// Background Colors
-$navyBlue: #23395D;
-$darkBlue: #203354;
-$royalBlue: #1C2E4A;
-$mediumBlue: #192541;
-$midnightBlue: #0c0c0c;
-----------------------------
-// Text Colors
-$whiteColor: #000;
-$blackColor: #000;
-
-$textColor: #000;
-$cursorColor: #bdbdbd;
-
-// Background Colors
-$navyBlue: #23395D;
-$darkBlue: #203354;
-$royalBlue: #1C2E4A;
-$mediumBlue: #192541;
-$midnightBlue: #fff;
-
-*/
-// Colors
-// $orangeColor: #FF7900;
-// --TODO: Change the variable to be more theme dependant
-$orangeColor: rgba(255, 120, 0, 0.8);
-$darkOrangeColor: rgba(255, 120, 0, 1); // #FF7800
-
-// Text Colors
-$whiteColor: #FFFFFF; 
-$textColor: #FCFCFC;
-$cursorColor: #bdbdbd;
-
-// Background Colors
-$navyBlue: #23395D;
-$darkBlue: #203354;
-$royalBlue: #1C2E4A;
-$mediumBlue: #192541;
-$midnightBlue: #0c0c0c;
-
-
-// Fonts Sizes
-// --TODO: Add all the list of fonts for desktop, tablet and mobile
-$headingFontSize: 13px;
-
-$bodyFontSize: 13px;
-
-$baseFontSize: 70px;
-$headingScale: 10;
-
+// Width & Height
+$width: calc(100vh - 18vh);
 
 // Bubbles
 $bubble-count: 25;
 $sway-type: "sway-left-to-right", "sway-right-to-left";
+
+@import "theme/Colors";
+
+// --TODO: Add all the list of fonts for desktop, tablet and mobile.
+
+// Fonts Sizes
+$heading1FontSize: 10vh;
+$heading2FontSize: 08vh;
+$heading3FontSize: 06vh;
+$heading4FontSize: 05vh;
+$heading5FontSize: 04vh;
+$heading6FontSize: 03vh;
+
+$subTitle1FontSize: 13px;
+$subTitle2FontSize: 13px;
+
+$body1FontSize: 13px;
+$body2FontSize: 13px;
+
+$buttonFontSize: 10px;
+
+$captionFontSize: 10px;
+
+$overlineFontSize: 10px;
+
+// Fonts Weight
+$heading1FontWeight: 100;
+$heading2FontWeight: 100;
+$heading3FontWeight: 100;
+$heading4FontWeight: 100;
+$heading5FontWeight: 100;
+$heading6FontWeight: 100;
+
+$subTitle1FontWeight: 100;
+$subTitle2FontWeight: 100;
+
+$body1FontWeight: 100;
+$body2FontWeight: 100;
+
+$buttonFontWeight: 100;
+
+$captionFontWeight: 100;
+
+$overlineFontWeight: 100;
+
+
+// Letter Spacing
+$heading1LetterSpacing: -2px;
+$heading2LetterSpacing: 0px;
+$heading3LetterSpacing: 0px;
+$heading4LetterSpacing: 0px;
+$heading5LetterSpacing: 0px;
+$heading6LetterSpacing: 0px;
+
+$subTitle1LetterSpacing: 0px;
+$subTitle2LetterSpacing: 0px;
+
+$body1LetterSpacing: 0px;
+$body2LetterSpacing: 0px;
+
+$buttonLetterSpacing: 0px;
+
+$captionLetterSpacing: 0px;
+
+$overlineLetterSpacing: 0px;
+
+///////////////////////////////
+$baseFontSize: 70px;
+$headingScale: 10;
+
+

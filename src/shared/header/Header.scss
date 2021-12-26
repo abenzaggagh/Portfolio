@@ -23,7 +23,26 @@ header {
 }
 
 .icon:hover {
-    background-color: $orangeColor;
+    background-color: $primaryColor;
+}
+
+.theme-changer {
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 10vh;
+    height: 10vh;
+    cursor: pointer;
+    position: fixed;
+    text-align: center;
+    display: inline-flex;
+    background-color: transparent;
+    transition: background-color 300ms ease;
+}
+
+.theme-changer-icon {
+    height: 28px;
+    width: 28px;
 }
 
 .menu {
@@ -38,7 +57,7 @@ header {
     margin-bottom: 6px;
     position: relative;
     border-radius: 40px;
-    background: $whiteColor;
+    background: $textColor;
 }
 
 #header span:first-child {

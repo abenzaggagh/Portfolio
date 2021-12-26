@@ -41,7 +41,7 @@
 .overlay-content a {
     padding: 8px;
     display: block;
-    font-size: 36px;
+    // font-size:: 36px;
     color: #818181;
     transition: 0.3s;
     text-decoration: none;
@@ -50,7 +50,7 @@
 .overlay-languages a {
     padding: 8px;
     display: block;
-    font-size: 18px;
+    // font-size:: 18px;
     color: #818181;
     transition: 0.3s;
     text-decoration: none;
@@ -64,7 +64,7 @@
     position: absolute;
     top: 20px;
     right: 45px;
-    font-size: 60px;
+    // font-size:: 60px;
 }
 
 .language-btn {
@@ -73,7 +73,7 @@
     background: none;
     color: #818181;
     margin-bottom: 20px;
-    font-size: 20px;
+    // font-size:: 20px;
 }
 
 .language-btn:hover {
@@ -116,7 +116,7 @@
  */
 @media only screen and (max-width: 414px) {
     .overlay-content a {
-        font-size: 30px;
+        // font-size:: 30px;
     }
 
     .close {
@@ -124,7 +124,7 @@
     }
 
     .language-btn {
-        font-size: 18px;
+        // font-size:: 18px;
     }
 }
 
@@ -134,7 +134,7 @@
  */
 @media only screen and (max-width: 375px) {
     .overlay-content a {
-        font-size: 24px;
+        // font-size:: 24px;
     }
 
     .close {
@@ -142,7 +142,7 @@
     }
 
     .language-btn {
-        font-size: 18px;
+        // font-size:: 18px;
     }
 }
 
@@ -152,7 +152,7 @@
  */
 @media only screen and (max-width: 320px) {
     .overlay-content a {
-        font-size: 22px;
+        // font-size:: 22px;
     }
 
     .close {
@@ -160,7 +160,7 @@
     }
 
     .language-btn {
-        font-size: 15px;
+        // font-size:: 15px;
     }
 }
 

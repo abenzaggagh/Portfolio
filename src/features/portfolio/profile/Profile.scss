@@ -7,7 +7,7 @@
 }
 
 p {
-    color: white;
+    color: $textColor;
     letter-spacing: .01em;
 }
 
@@ -17,7 +17,7 @@ p {
 
 .paragraph {
     text-space: 2px;
-    font-size: 21px;
+    // font-size:: 21px;
     padding: 15px 20px;
     font-family: 'Mukta-Light', serif;
 }
