@@ -14,6 +14,7 @@ import Header from "../../shared/header/Header";
 import Overlay from "../../shared/overlay/Overlay";
 import Footer from "../../shared/footer/Footer";
 import NotFound from "../../shared/notFound/NotFound";
+import Secret from "../privatePortfolio/secret/Secret";
 
 export default function Portfolio() {
 
@@ -50,6 +51,9 @@ export default function Portfolio() {
                     </Route>
                     <Route path="/skills">
                         <SkillsExperiences />
+                    </Route>
+                    <Route path="/secret">
+                        <Secret />
                     </Route>
                     <Route path='*' exact={true} component={NotFound} />
                 </Switch>

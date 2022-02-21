@@ -11,8 +11,6 @@ $sway-type: "sway-left-to-right", "sway-right-to-left";
 
 @import "theme/Colors";
 
-// --TODO: Add all the list of fonts for desktop, tablet and mobile.
-
 // Fonts Sizes
 $heading1FontSize: 10vh;
 $heading2FontSize: 08vh;
@@ -27,7 +25,9 @@ $subTitle2FontSize: 13px;
 $body1FontSize: 13px;
 $body2FontSize: 13px;
 
-$buttonFontSize: 10px;
+$largeButtonFontSize: 5vh;
+$buttonFontSize: 2.33vh;
+$smallButtonFontSize: 2vh;
 
 $captionFontSize: 10px;
 
@@ -47,12 +47,11 @@ $subTitle2FontWeight: 100;
 $body1FontWeight: 100;
 $body2FontWeight: 100;
 
-$buttonFontWeight: 100;
+$buttonFontWeight: 300;
 
 $captionFontWeight: 100;
 
 $overlineFontWeight: 100;
-
 
 // Letter Spacing
 $heading1LetterSpacing: -2px;
@@ -74,8 +73,77 @@ $captionLetterSpacing: 0px;
 
 $overlineLetterSpacing: 0px;
 
-///////////////////////////////
-$baseFontSize: 70px;
-$headingScale: 10;
 
 
+
+
+
+
+
+/**
+ *
+ * Mobile
+ *
+ **/
+
+// Fonts Sizes
+$heading1MobileFontSize: 07.0vh;    // TO VERIFY
+$heading2MobileFontSize: 06.0vh;    // TO VERIFY
+$heading3MobileFontSize: 03.5vh;    // TO VERIFY
+$heading4MobileFontSize: 03.0vh;    // TO VERIFY
+$heading5MobileFontSize: 02.0vh;    // TO VERIFY
+$heading6MobileFontSize: 01.0vh;    // TO VERIFY
+
+$subTitle1MobileFontSize: 3vh;
+$subTitle2MobileFontSize: 3vh;
+
+$body1MobileFontSize: 2vh;
+$body2MobileFontSize: 1.8vh;
+
+$largeButtonMobileFontSize: 4vh;
+$buttonMobileFontSize: 2vh;
+$smallButtonMobileFontSize: 10px;
+
+$captionMobileFontSize: 10px;
+
+$overlineMobileFontSize: 10px;
+
+// Letter Spacing
+$heading1MobileLetterSpacing: 0px;
+$heading2MobileLetterSpacing: 0px;
+$heading3MobileLetterSpacing: 0px;
+$heading4MobileLetterSpacing: 0px;
+$heading5MobileLetterSpacing: 0px;
+$heading6MobileLetterSpacing: 0px;
+
+$subTitle1MobileLetterSpacing: 0px;
+$subTitle2MobileLetterSpacing: 0px;
+
+$body1MobileLetterSpacing: 0px;
+$body2MobileLetterSpacing: 0px;
+
+$buttonMobileLetterSpacing: 0px;
+
+$captionMobileLetterSpacing: 0px;
+
+$overlineMobileLetterSpacing: 0px;
+
+// Fonts Weight
+$heading1MobileFontWeight: 100;
+$heading2MobileFontWeight: 100;
+$heading3MobileFontWeight: 100;
+$heading4MobileFontWeight: 100;
+$heading5MobileFontWeight: 100;
+$heading6MobileFontWeight: 100;
+
+$subTitle1MobileFontWeight: 100;
+$subTitle2MobileFontWeight: 100;
+
+$body1MobileFontWeight: 100;
+$body2MobileFontWeight: 100;
+
+$buttonMobileFontWeight: 100;
+
+$captionMobileFontWeight: 100;
+
+$overlineMobileFontWeight: 100;

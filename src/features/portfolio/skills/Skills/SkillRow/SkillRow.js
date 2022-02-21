@@ -3,7 +3,7 @@ import SkillIcon from "../SkillIcons/SkillIcon";
 
 export default function SkillRow(props) {
     return (<>
-        <div className={"row mt-4"}>
+        <div className={"row"}>
 
             <div className={"mt-2"}>
                 <h3>

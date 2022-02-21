@@ -1,16 +1,5 @@
 @import "../../../assets/styles/Variables";
 
-@for $i from 1 through 6 {
-    h#{$i} {
-        margin: 0;
-    }
-}
-
-p {
-    color: $textColor;
-    letter-spacing: .01em;
-}
-
 .align-left {
     text-align: start;
 }

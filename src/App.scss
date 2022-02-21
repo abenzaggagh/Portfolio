@@ -42,78 +42,91 @@ h6 {
 }
 
 p {
-	color: var(--textColor)
+	font-size: $body1MobileFontSize;
+	font-weight: $body1MobileFontWeight;
+	letter-spacing: $body1MobileLetterSpacing;
 }
 
-/**
- * Width
- * iPhone 6/7/8 Plus - Width dimensions
- */
-@media only screen and (max-width: 414px) {
-	h1 {
-		// font-size: 36px;
-	}
+a {
+	font-size: $buttonFontSize;
+	font-weight: $buttonFontWeight;
+	letter-spacing: $buttonLetterSpacing;
+}
 
-	h3 {
-		// font-size: 20px;
-	}
-
-	@for $i from 1 through 6 {
-		h#{$i} {
-			white-space: nowrap;
-			margin: 20 - ($i * 3px);
-		}
+.large-btn {
+	a {
+		font-size: $largeButtonFontSize;
+		font-weight: $buttonFontWeight;
+		letter-spacing: $buttonLetterSpacing;
 	}
 }
 
 /**
  * Width
- * iPhone 6/7/8 & X - Width dimensions
+ * Mobile & Tablet - Width dimensions
  */
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 1000px) {
 	h1 {
-		// font-size: 34px;
+		margin: 2vh 0 1vh 0;
+		font-size: $heading1MobileFontSize;
+		font-weight: $heading1MobileFontWeight;
+		letter-spacing: $heading1MobileLetterSpacing;
+	}
+
+	h2 {
+		font-size: $heading2MobileFontSize;
+		font-weight: $heading2MobileFontWeight;
+		letter-spacing: $heading2MobileLetterSpacing;
 	}
 
 	h3 {
-		// font-size: 18px;
+		font-size: $heading3MobileFontSize;
+		font-weight: $heading3MobileFontWeight;
+		letter-spacing: $heading3MobileLetterSpacing;
+	}
+
+	h4 {
+		font-size: $heading4MobileFontSize;
+		font-weight: $heading4MobileFontWeight;
+		letter-spacing: $heading4MobileLetterSpacing;
+	}
+
+	h5 {
+		font-size: $heading5MobileFontSize;
+		font-weight: $heading5MobileFontWeight;
+		letter-spacing: $heading5LetterSpacing;
+	}
+
+	h6 {
+		font-size: $heading6MobileFontSize;
+		font-weight: $heading6MobileFontWeight;
+		letter-spacing: $heading6MobileLetterSpacing;
 	}
 
 	p {
-
+		font-size: $body1MobileFontSize;
+		font-weight: $body1MobileFontWeight;
+		letter-spacing: $body1MobileLetterSpacing;
 	}
 
-	@for $i from 1 through 6 {
-		h#{$i} {
-			white-space: nowrap;
-			margin: 15 - ($i * 3px);
-			// font-size:: 36 - ($i * 2px);
+	a {
+		font-size: $buttonMobileFontSize;
+		font-weight: $buttonMobileFontWeight;
+		letter-spacing: $buttonMobileLetterSpacing;
+	}
+
+	.large-btn {
+		a {
+			font-size: $largeButtonMobileFontSize;
+			font-weight: $buttonFontWeight;
+			letter-spacing: $buttonLetterSpacing;
 		}
 	}
+
 }
 
 /**
  *
  * iPhone 5/SE - Width dimensions
  */
-@media only screen and (max-width: 320px) {
-	h1 {
-		// font-size:: 32px;
-	}
-
-	h3 {
-		// font-size:: 15px;
-	}
-
-	p {
-
-	}
-
-	@for $i from 1 through 6 {
-		h#{$i} {
-			white-space: nowrap;
-			margin: 10 - ($i * 2px);
-			// font-size:: 34 - ($i * 2px);
-		}
-	}
-}
+@media only screen and (max-width: 320px) {}

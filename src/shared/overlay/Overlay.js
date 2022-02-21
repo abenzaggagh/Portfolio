@@ -30,7 +30,7 @@ export default function Overlay({ overlay, closeOverlay }) {
                 <div className="overlay-content">
                     {
                         overlayButtons.map((item, i) =>
-                            (<div className="" key={i}>
+                            (<div className="large-btn" key={i}>
                                 <Link onClick={handleClick} to={`${item.link}`}>
                                     <FormattedMessage id={item.id} defaultMessage={`${item.default}`} />
                                 </Link>
