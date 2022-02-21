@@ -11,6 +11,7 @@ import Portfolio from "./features/portfolio/Portfolio";
 import PrivatePortfolio from "./features/privatePortfolio/PrivatePortfolio";
 
 import { Theme, ThemeContext } from "./utils/context";
+import * as ReactGA from "react-ga";
 
 
 const logVisit = () => {
@@ -19,10 +20,16 @@ const logVisit = () => {
         visitedAt: new Date()
     });
 }
+const initReactGA = () => {
+    ReactGA.initialize('UA-209766994-2');
+    ReactGA.pageview('portfolio');
+};
 
 export default function App({isAuth}) {
 
-    logVisit();
+    // logVisit();
+
+    initReactGA();
 
     const [theme, setTheme] = useState(Theme);
 
