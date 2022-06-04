@@ -26,3 +26,9 @@
 .project-title {
   margin: 0;
 }
+
+
+.project-disabled {
+  color: gray;
+  pointer-events: none;
+}

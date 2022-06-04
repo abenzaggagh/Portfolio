@@ -1,6 +1,7 @@
 import './ProjectRow.scss';
 
 import Constants from "../../../../shared/utils/Constants";
+import {Link} from "react-router-dom";
 
 export default function ProjectRow(props) {
     return (
@@ -9,12 +10,17 @@ export default function ProjectRow(props) {
             {/* TODO: Fix the displaying layout for the desktop and mobile version */}
 
             <div className={"col-md-4 project-clipart"}>
-                <a href="#">
+                <Link to={`project/${props.id}`}>
                     <img style={{width: "100%"}} src={props.cover} alt={"DEFAULT IMAGE"}/>
-                </a>
+                </Link>
             </div>
             <div className={"col-md-8"}>
-                <h3 className={"col-4 project-title"}>{props.title}</h3>
+                <Link to={`project/${props.id}`}>
+                    <h3 className={"col-4 project-title"}>
+                        {props.title}
+                    </h3>
+                </Link>
+
                 <p className={"project-description"}>{props.description}</p>
 
                 {/* TODO: Displqy the list of the tech used in the project */}
@@ -26,9 +32,20 @@ export default function ProjectRow(props) {
                 </div>
                 }
 
-                <div>
-                    <a href={`${props.link}`} target={"_blank"}>GitHub Repository</a>
+                <div className={"row"} style={{zIndex:100}}>
+                    <div className={"col-6"}>
+                        <a href={`${props.link}`}
+                           target={"_blank"}
+                           className={props.link === 'DISABLED' ? 'project-disabled' : ''}>GitHub Repository</a>
+                    </div>
+
+                    {(props.preview && props.preview !== 'NONE') &&
+                        <div className={"col-6"}>
+                            <a href={`${props.preview}`} target={"_blank"}>Preview</a>
+                        </div>
+                    }
                 </div>
+
             </div>
         </div>
     </>);

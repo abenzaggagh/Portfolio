@@ -49,9 +49,11 @@ export default function Projects() {
 
                 <div className={"fluid-container m-5 scroll-bounce"}>
                     { projects.map(project => <ProjectRow key={project.id}
+                                                          id={project.id}
                                                           link={project.link}
                                                           cover={project.cover}
                                                           title={project.title}
+                                                          preview={project.preview}
                                                           description={project.description} />)}
                 </div>
             </div>

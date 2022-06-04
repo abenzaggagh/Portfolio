@@ -15,6 +15,7 @@ import Overlay from "../../shared/overlay/Overlay";
 import Footer from "../../shared/footer/Footer";
 import NotFound from "../../shared/notFound/NotFound";
 import Secret from "../privatePortfolio/secret/Secret";
+import ProjectDetails from "./projects/ProjectDetails/ProjectDetails";
 
 export default function Portfolio() {
 
@@ -45,6 +46,9 @@ export default function Portfolio() {
                     </Route>
                     <Route path="/projects">
                         <Projects />
+                    </Route>
+                    <Route path="/project/:id">
+                        <ProjectDetails />
                     </Route>
                     <Route path="/profile">
                         <Profile />
