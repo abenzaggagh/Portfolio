@@ -1,5 +1,22 @@
 @import "../../../assets/styles/Variables";
 
+a {
+    font-size: unset;
+}
+
+p {
+    font-size: 2.2vh;
+}
+
+.vertical-timeline-element-title {
+    margin: 0 !important;
+    font-size: 2.3vh !important;
+}
+
+.vertical-timeline-element-subtitle {
+    font-size: 2vh !important;
+}
+
 .align-left {
     text-align: start;
 }

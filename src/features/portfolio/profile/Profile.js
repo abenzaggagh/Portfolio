@@ -9,6 +9,10 @@ import SquareCard from "../../../shared/cards/SquareCard";
 import {collection, getDocs} from "firebase/firestore";
 import Firestore from "../../../utils/firestore";
 
+import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
+
+import 'react-vertical-timeline-component/style.min.css';
+
 
 export default function Profile() {
 
@@ -44,6 +48,54 @@ export default function Profile() {
                 </>);
         }
     }
+
+    const TimeLineElements = () => {
+        return timelineElements.map(timelineElement => <>
+            <VerticalTimelineElement
+                className="vertical-timeline-element--work"
+                contentStyle={{ background: timelineElement.background, color: timelineElement.color }}
+                contentArrowStyle={{ borderRight: '7px solid rgb(255, 120, 0)' }}
+                date={`${timelineElement.from} - ${timelineElement.to}`}
+                iconStyle={{ background: timelineElement.background, color: timelineElement.color }}>
+                <p className="vertical-timeline-element-title">{timelineElement.position} at <a href={timelineElement.link}>{timelineElement.company}</a></p>
+                <p className="vertical-timeline-element-subtitle">{timelineElement.location}</p>
+            </VerticalTimelineElement>
+        </>);
+    }
+
+    const timelineElements = [{
+        color: 'rgb(255, 255, 255)',
+        background: 'rgb(255, 120, 0)',
+        position: 'Software Engineer',
+        from: 'Nov 2021', to: 'Present',
+        link: 'https://www.orange-business.com/fr',
+        company: 'Orange Business Services',
+        location: 'Rabat, Maroc'
+    }, {
+        color: 'rgb(255, 255, 255)',
+        background: 'rgb(255, 120, 0)',
+        position: 'Research & Development Engineer',
+        from: 'Sep 2020', to: 'Nov 2021',
+        link: 'https://docaposte.fr',
+        company: 'Docaposte',
+        location: 'Casablanca, Maroc'
+    }, {
+        color: 'rgb(255, 255, 255)',
+        background: 'rgb(255, 120, 0)',
+        position: 'Research & Development Intern',
+        from: 'Feb 2020', to: 'Aug 2021',
+        link: 'https://docaposte.fr',
+        company: 'Docaposte',
+        location: 'Casablanca, Maroc'
+    }, {
+        color: 'rgb(255, 255, 255)',
+        background: 'rgb(255, 120, 0)',
+        position: 'Graduated from',
+        from: 'Sep 2017', to: 'June 2020',
+        link: 'http://ensias.um5.ac.ma/',
+        company: 'ENSIAS',
+        location: 'Rabat, Maroc'
+    }];
 
     const line = defineMessages({
         line2: {
@@ -87,6 +139,10 @@ export default function Profile() {
                     <h3>
                         <FormattedMessage id="brief_history" defaultMessage={``} />
                     </h3>
+
+                    <VerticalTimeline>
+                        <TimeLineElements />
+                    </VerticalTimeline>
                 </div>
             </div>
 

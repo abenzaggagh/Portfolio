@@ -2,6 +2,7 @@ import './ProjectRow.scss';
 
 import Constants from "../../../../shared/utils/Constants";
 import {Link} from "react-router-dom";
+import {Badge} from "react-bootstrap";
 
 export default function ProjectRow(props) {
     return (
@@ -14,11 +15,13 @@ export default function ProjectRow(props) {
                     <img style={{width: "100%"}} src={props.cover} alt={"DEFAULT IMAGE"}/>
                 </Link>
             </div>
+
             <div className={"col-md-8"}>
                 <Link to={`project/${props.id}`}>
                     <h3 className={"col-4 project-title"}>
                         {props.title}
                     </h3>
+                    <Badge variant={'primary'}>In Progress</Badge>
                 </Link>
 
                 <p className={"project-description"}>{props.description}</p>
