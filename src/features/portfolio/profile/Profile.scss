@@ -17,6 +17,41 @@ p {
     font-size: 2vh !important;
 }
 
+.vertical-timeline-element-content-arrow {
+    border-right: 7px solid $primaryVariantColor !important;
+}
+
+.vertical-timeline-element-content {
+    background: $primaryVariantColor !important;
+    color: $textColor !important;
+}
+
+.vertical-timeline::before {
+    background: $textColor !important;
+}
+
+
+element.style {
+    background: rgb(255, 120, 0);
+    color: rgb(0, 0, 0);
+}
+.vertical-timeline--animate .vertical-timeline-element-icon.bounce-in {
+    visibility: visible;
+    -webkit-animation: cd-bounce-1 .6s;
+    animation: cd-bounce-1 .6s;
+}
+.vertical-timeline-element-icon {
+    -webkit-transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+}
+
+.vertical-timeline-element-icon {
+    box-shadow: 0 0 0 4px $textColor !important;
+}
+
+
+
+
 .align-left {
     text-align: start;
 }

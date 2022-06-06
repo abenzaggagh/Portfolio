@@ -53,47 +53,50 @@ export default function Profile() {
         return timelineElements.map(timelineElement => <>
             <VerticalTimelineElement
                 className="vertical-timeline-element--work"
-                contentStyle={{ background: timelineElement.background, color: timelineElement.color }}
-                contentArrowStyle={{ borderRight: '7px solid rgb(255, 120, 0)' }}
                 date={`${timelineElement.from} - ${timelineElement.to}`}
-                iconStyle={{ background: timelineElement.background, color: timelineElement.color }}>
-                <p className="vertical-timeline-element-title">{timelineElement.position} at <a href={timelineElement.link}>{timelineElement.company}</a></p>
+                iconStyle={{ background: timelineElement.background, color: timelineElement.color }}
+            >
+                <p className="vertical-timeline-element-title">{timelineElement.position} {timelineElement.junction} <a href={timelineElement.link}>{timelineElement.entity}</a></p>
                 <p className="vertical-timeline-element-subtitle">{timelineElement.location}</p>
             </VerticalTimelineElement>
         </>);
     }
 
     const timelineElements = [{
-        color: 'rgb(255, 255, 255)',
+        color: 'rgb(0, 0, 0)',
         background: 'rgb(255, 120, 0)',
         position: 'Software Engineer',
+        junction: 'at',
         from: 'Nov 2021', to: 'Present',
         link: 'https://www.orange-business.com/fr',
-        company: 'Orange Business Services',
+        entity: 'Orange Business Services',
         location: 'Rabat, Maroc'
     }, {
         color: 'rgb(255, 255, 255)',
         background: 'rgb(255, 120, 0)',
         position: 'Research & Development Engineer',
+        junction: 'at',
         from: 'Sep 2020', to: 'Nov 2021',
         link: 'https://docaposte.fr',
-        company: 'Docaposte',
+        entity: 'Docaposte',
         location: 'Casablanca, Maroc'
     }, {
         color: 'rgb(255, 255, 255)',
         background: 'rgb(255, 120, 0)',
         position: 'Research & Development Intern',
+        junction: 'at',
         from: 'Feb 2020', to: 'Aug 2021',
         link: 'https://docaposte.fr',
-        company: 'Docaposte',
+        entity: 'Docaposte',
         location: 'Casablanca, Maroc'
     }, {
         color: 'rgb(255, 255, 255)',
         background: 'rgb(255, 120, 0)',
-        position: 'Graduated from',
+        position: 'Graduated',
+        junction: 'from',
         from: 'Sep 2017', to: 'June 2020',
         link: 'http://ensias.um5.ac.ma/',
-        company: 'ENSIAS',
+        entity: 'ENSIAS',
         location: 'Rabat, Maroc'
     }];
 
