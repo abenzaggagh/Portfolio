@@ -24,6 +24,7 @@ p {
 .vertical-timeline-element-content {
     background: $primaryVariantColor !important;
     color: $textColor !important;
+    box-shadow: 0 3px 0 $textColor !important;
 }
 
 .vertical-timeline::before {
