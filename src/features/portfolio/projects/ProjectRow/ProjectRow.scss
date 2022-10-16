@@ -27,6 +27,13 @@
   margin: 0;
 }
 
+@media only screen and (max-width: 600px) {
+  .project-title {
+    margin: 10px 0;
+  }
+}
+
+
 
 .project-disabled {
   color: gray;

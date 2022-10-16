@@ -1,8 +1,0 @@
-{
-  "hosting": {
-    "public": "build",
-    "site": "abenzaggagh",
-    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
-    "rewrites": [{"source": "**", "destination": "/index.html"}]
-  }
-}

@@ -13,11 +13,11 @@ export default function Home() {
         <>
             <section className="home text-center">
                 <div className={""}>
-                    <h1>
+                    <h1 className={"front-title"}>
                         <FormattedMessage id="greetings" defaultMessage={`${Constants.GREETINGS}`} />
                     </h1>
                 </div>
-                <div className={"mt-3"}>
+                <div className={"front-subtitle mt-3"}>
                     <div className="typewriter">
                         <h3><FormattedMessage id="role" defaultMessage={`${Constants.ROLE}`} /></h3>
                     </div>

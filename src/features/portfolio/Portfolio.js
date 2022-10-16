@@ -14,8 +14,9 @@ import Header from "../../shared/header/Header";
 import Overlay from "../../shared/overlay/Overlay";
 import Footer from "../../shared/footer/Footer";
 import NotFound from "../../shared/notFound/NotFound";
-import Secret from "../privatePortfolio/secret/Secret";
 import ProjectDetails from "./projects/ProjectDetails/ProjectDetails";
+
+import Auth from "./auth/Auth";
 
 export default function Portfolio() {
 
@@ -56,9 +57,11 @@ export default function Portfolio() {
                     <Route path="/skills">
                         <SkillsExperiences />
                     </Route>
-                    <Route path="/secret">
-                        <Secret />
+
+                    <Route path="/auth">
+                        <Auth />
                     </Route>
+
                     <Route path='*' exact={true} component={NotFound} />
                 </Switch>
             </main>

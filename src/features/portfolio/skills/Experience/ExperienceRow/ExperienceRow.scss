@@ -1,3 +1,6 @@
+@import "../../../../../assets/styles/Variables";
+
+
 .exp-date {
     // font-weight: 700;
     // font-size:: 28px;
@@ -5,11 +8,16 @@
 
 .exp-title {
     // font-size:: 28px;
-    // font-weight: 400;
+    letter-spacing: -0.5px;
+    font-weight: 400;
 }
 
 .exp-subtitle {
     // font-size:: 24px;
     // font-weight: 300;
     margin: 10px auto;
+}
+
+ul li {
+    color: $textColor;
 }

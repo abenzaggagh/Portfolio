@@ -1,6 +1,6 @@
 // Variables
 
-$overflow: scroll;
+$overflow: auto;
 
 // Width & Height
 $width: calc(100vh - 18vh);
@@ -12,12 +12,12 @@ $sway-type: "sway-left-to-right", "sway-right-to-left";
 @import "theme/Colors";
 
 // Fonts Sizes
-$heading1FontSize: 10vh;
-$heading2FontSize: 08vh;
-$heading3FontSize: 06vh;
-$heading4FontSize: 05vh;
-$heading5FontSize: 04vh;
-$heading6FontSize: 03vh;
+$heading1FontSize: 05.5vh;
+$heading2FontSize: 04.5vh;
+$heading3FontSize: 03.5vh;
+$heading4FontSize: 03.0vh;
+$heading5FontSize: 02.5vh;
+$heading6FontSize: 02.0vh;
 
 $subTitle1FontSize: 13px;
 $subTitle2FontSize: 13px;

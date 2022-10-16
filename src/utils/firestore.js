@@ -2,13 +2,13 @@ import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfiguration = {
-    projectId: "abenzaggagh",
-    messagingSenderId: "571177422593",
-    storageBucket: "abenzaggagh.appspot.com",
-    authDomain: "abenzaggagh.firebaseapp.com",
-    apiKey: "AIzaSyDo_LlQ937nQxwcz_-99R2UXobmiSJtNfM",
-    appId: "1:571177422593:web:35e3120eff54ab4cdfd500",
-    databaseURL: "https://abenzaggagh-default-rtdb.europe-west1.firebasedatabase.app",
+    apiKey: "AIzaSyC9p_VyMaaOIHNvQvNK93uVox9KIZDciqk",
+    authDomain: "abenzaggagh-14be0.firebaseapp.com",
+    projectId: "abenzaggagh-14be0",
+    storageBucket: "abenzaggagh-14be0.appspot.com",
+    messagingSenderId: "472578384928",
+    appId: "1:472578384928:web:6d335289f1884a8ddb4845",
+    measurementId: "G-2ZRKJS3ZHV"
 };
 
 initializeApp(firebaseConfiguration);

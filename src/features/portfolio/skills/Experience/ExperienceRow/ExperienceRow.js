@@ -10,20 +10,21 @@ export default function ExperienceRow(props) {
                     <FormattedMessage id={`${props.experience.toDate}`} defaultMessage={`${props.experience.toDate}`} />
                 </p>
             </div>
-            <div className={"col-sm-5"}>
+            <div className={"col-sm-3"}>
                 <p className={"exp-title"}>
                     <FormattedMessage id={`${props.experience.role}`} defaultMessage={`${props.experience.role}`} />
                 </p>
+
                 {props.experience.project &&
-                <p className={"exp-subtitle"}>
-                    <FormattedMessage id={`${props.experience.project}`} defaultMessage={`${props.experience.project}`} />
-                </p>
+                    <p className={"exp-subtitle"}>
+                        <FormattedMessage id={`${props.experience.project}`} defaultMessage={`${props.experience.project}`} />
+                    </p>
                 }
                 <p className={"exp-subtitle"}>
                     <FormattedMessage id={`${props.experience.company}`} defaultMessage={`${props.experience.company}`} />
                 </p>
             </div>
-            <div className={"col-sm-4"}>
+            <div className={"col-sm-6"}>
                 <ul>
                     { props.experience.tasks.map(task => <li>
                         <p className={"exp-body"}>

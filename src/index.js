@@ -13,7 +13,7 @@ ReactDOM.render(
     <React.StrictMode>
         <IntlProvider locale={Locale} messages={Language}>
             <RouterProvider>
-                <App isAuth={true} />
+                <App />
             </RouterProvider>
         </IntlProvider>
     </React.StrictMode>, document.getElementById('root')

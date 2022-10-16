@@ -1,6 +1,7 @@
 import './ProjectRow.scss';
 
 import Constants from "../../../../shared/utils/Constants";
+
 import {Link} from "react-router-dom";
 import {Badge} from "react-bootstrap";
 

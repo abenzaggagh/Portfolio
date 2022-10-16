@@ -6,10 +6,22 @@
     @include center();
 }
 
+.front-title {
+    font-size: 10vh !important;
+}
+
+
+.front-subtitle {
+    margin: 35px;
+    font-size: 5vh !important;
+}
+
+
 .typewriter h3 {
     margin: 0 auto;
     text-align: center;
     overflow: hidden;
+    font-size: inherit;
     white-space: nowrap;
     animation-duration: 3.5s;
     animation-fill-mode: forwards;
@@ -19,4 +31,73 @@
     -moz-animation: cssAnimation 0s ease-in 5s forwards;
     -webkit-animation: cssAnimation 0s ease-in 5s forwards;
     animation: typing 5s steps(40, end), blink-caret .75s step-end infinite, cssAnimation 0s ease-in 4.5s forwards;
+}
+
+
+@media only screen and (max-width: 1270px) {
+    .front-title {
+        font-size: 6vh !important;
+    }
+
+
+    .front-subtitle {
+        font-size: 4vh !important;
+    }
+}
+
+
+@media only screen and (max-width: 421px) {
+    .front-title {
+        font-size: 3vh !important;
+    }
+
+
+    .front-subtitle {
+        font-size: 2vh !important;
+    }
+}
+
+/**
+ * Width
+ * iPhone 6/7/8 Plus - Width dimensions
+ */
+@media only screen and (max-width: 414px) {
+    .front-title {
+        font-size: 3vh !important;
+    }
+
+
+    .front-subtitle {
+        font-size: 2vh !important;
+    }
+}
+
+/**
+ * Width
+ * iPhone 6/7/8 & X - Width dimensions
+ */
+@media only screen and (max-width: 375px) {
+    .front-title {
+        font-size: 4vh !important;
+    }
+
+
+    .front-subtitle {
+        font-size: 2vh !important;
+    }
+}
+
+/**
+ *
+ * iPhone 5/SE - Width dimensions
+ */
+@media only screen and (max-width: 320px) {
+    .front-title {
+        font-size: 4vh !important;
+    }
+
+
+    .front-subtitle {
+        font-size: 2vh !important;
+    }
 }

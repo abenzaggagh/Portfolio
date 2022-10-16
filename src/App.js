@@ -2,9 +2,6 @@ import './App.scss';
 
 import React, { useState } from "react";
 
-import Firestore from "./utils/firestore";
-import { addDoc, collection } from "firebase/firestore";
-
 import { Bubbles } from "./shared/Bubbles";
 
 import Portfolio from "./features/portfolio/Portfolio";
@@ -13,21 +10,18 @@ import PrivatePortfolio from "./features/privatePortfolio/PrivatePortfolio";
 import { Theme, ThemeContext } from "./utils/context";
 import * as ReactGA from "react-ga";
 
-
-const logVisit = () => {
-    // TODO: Add a generated unique
-    addDoc(collection(Firestore, "Visitors"), {
-        visitedAt: new Date()
-    });
-}
 const initReactGA = () => {
     ReactGA.initialize('UA-209766994-2');
     ReactGA.pageview('portfolio');
 };
 
-export default function App({isAuth}) {
+export default function App() {
 
-    // logVisit();
+    let isAuth = false;
+
+    if (localStorage.getItem('auth') && localStorage.getItem('auth') === 'true') {
+        isAuth = true;
+    }
 
     initReactGA();
 
@@ -44,7 +38,7 @@ export default function App({isAuth}) {
     return (
         <ThemeContext.Provider value={[theme, setTheme]}>
                 <Bubbles />
-                {isAuth ? <Portfolio /> : <PrivatePortfolio />}
+                {isAuth ?  <PrivatePortfolio /> : <Portfolio />}
         </ThemeContext.Provider>
     );
 }

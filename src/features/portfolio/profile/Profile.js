@@ -12,9 +12,12 @@ import Firestore from "../../../utils/firestore";
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 
 import 'react-vertical-timeline-component/style.min.css';
+import {Locale} from "../../../shared/utils/Languages";
 
 
 export default function Profile() {
+
+    const currentLanguage = Locale;
 
     const [books, setBooks] = useState([]);
     const [isLoading, setLoading] = useState(true);
@@ -53,9 +56,7 @@ export default function Profile() {
         return timelineElements.map(timelineElement => <>
             <VerticalTimelineElement
                 className="vertical-timeline-element--work"
-                date={`${timelineElement.from} - ${timelineElement.to}`}
-                iconStyle={{ background: timelineElement.background, color: timelineElement.color }}
-            >
+                date={`${timelineElement.from} - ${timelineElement.to}`}>
                 <p className="vertical-timeline-element-title">{timelineElement.position} {timelineElement.junction} <a href={timelineElement.link}>{timelineElement.entity}</a></p>
                 <p className="vertical-timeline-element-subtitle">{timelineElement.location}</p>
             </VerticalTimelineElement>
@@ -63,8 +64,6 @@ export default function Profile() {
     }
 
     const timelineElements = [{
-        color: 'rgb(0, 0, 0)',
-        background: 'rgb(255, 120, 0)',
         position: 'Software Engineer',
         junction: 'at',
         from: 'Nov 2021', to: 'Present',
@@ -72,8 +71,6 @@ export default function Profile() {
         entity: 'Orange Business Services',
         location: 'Rabat, Maroc'
     }, {
-        color: 'rgb(255, 255, 255)',
-        background: 'rgb(255, 120, 0)',
         position: 'Research & Development Engineer',
         junction: 'at',
         from: 'Sep 2020', to: 'Nov 2021',
@@ -81,8 +78,6 @@ export default function Profile() {
         entity: 'Docaposte',
         location: 'Casablanca, Maroc'
     }, {
-        color: 'rgb(255, 255, 255)',
-        background: 'rgb(255, 120, 0)',
         position: 'Research & Development Intern',
         junction: 'at',
         from: 'Feb 2020', to: 'Aug 2021',
@@ -90,8 +85,6 @@ export default function Profile() {
         entity: 'Docaposte',
         location: 'Casablanca, Maroc'
     }, {
-        color: 'rgb(255, 255, 255)',
-        background: 'rgb(255, 120, 0)',
         position: 'Graduated',
         junction: 'from',
         from: 'Sep 2017', to: 'June 2020',
@@ -118,7 +111,7 @@ export default function Profile() {
                     <h3 className={"mb-3"}>
                         <FormattedMessage id="about_me" defaultMessage={``} />
                     </h3>
-                    <p><FormattedMessage id="profile_1_line" values={{ Age: `${Constants.MY_AGE}`, City: `${Constants.CURRENT_LOCATION.city}`, Country: `${Constants.CURRENT_LOCATION.country}` }} /></p>
+                    <p><FormattedMessage id="profile_1_line" values={{ Age: `${Constants.MY_AGE}`, City: `${Constants.CURRENT_LOCATION.city}`, Country: `${Constants.CURRENT_LOCATION.country[currentLanguage]}` }} /></p>
                     <p><FormattedMessage id="profile_2_line" /></p>
                     <p><FormattedMessage id="profile_3_line" /></p>
                     <p><FormattedMessage id="profile_4_line" /></p>

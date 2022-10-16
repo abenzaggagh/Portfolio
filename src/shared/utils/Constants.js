@@ -126,8 +126,11 @@ export default class Constants {
     }]
 
     static CURRENT_LOCATION = {
-        city: "Rabat",
-        country: "Morocco"
+        city: "Bordeaux",
+        country: {
+            "en": "France",
+            "fr": "France"
+        }
     }
 
     static LAST_COMPANY = {
@@ -137,8 +140,8 @@ export default class Constants {
 
     static CURRENT_COMPANY = {
         color: "#FF7800",
-        name: "Orange Business Services",
-        link: "https://www.orange-business.com/fr"
+        name: "Alter Solutions France",
+        link: "https://www.alter-solutions.fr/"
     }
 
     static FRONT_END_SKILLS = [
@@ -350,31 +353,37 @@ export default class Constants {
         }
     ];
 
-    static LIST_OF_EXPERIENCES = [
-        {
-            fromDate: "exp_1_from_date",
-            toDate: "exp_1_to_date",
-            role: "exp_1_role",
-            company: "exp_1_company",
-            tasks: [
-                "exp_1_task_1", "exp_1_task_2", "exp_1_task_3", "exp_1_task_4"
-            ]
-        },  {
-            fromDate: "exp_2_from_date",
-            toDate: "exp_2_to_date",
-            role: "exp_2_role",
-            company: "exp_2_company",
-            tasks: [
-                "exp_2_task_1", "exp_2_task_2", "exp_2_task_3"
-            ]
-        }, {
-            fromDate: "exp_3_from_date",
-            toDate: "exp_3_to_date",
-            role: "exp_3_role",
-            company: "exp_3_company",
-            tasks: []
-        }
-    ];
+    static LIST_OF_EXPERIENCES = [{
+        fromDate: "exp_1_from_date",
+        toDate: "exp_1_to_date",
+        role: "exp_1_role",
+        company: "exp_1_company",
+        tasks: [
+            "exp_1_task_1", "exp_1_task_2", "exp_1_task_3", "exp_1_task_4"
+        ]
+    }, {
+        fromDate: "exp_2_from_date",
+        toDate: "exp_2_to_date",
+        role: "exp_2_role",
+        company: "exp_2_company",
+        tasks: [
+            "exp_2_task_1", "exp_2_task_2", "exp_2_task_3", "exp_2_task_4"
+        ]
+    },  {
+        fromDate: "exp_3_from_date",
+        toDate: "exp_3_to_date",
+        role: "exp_3_role",
+        company: "exp_3_company",
+        tasks: [
+            "exp_3_task_1", "exp_3_task_2", "exp_3_task_3"
+        ]
+    }, {
+        fromDate: "exp_4_from_date",
+        toDate: "exp_4_to_date",
+        role: "exp_4_role",
+        company: "exp_4_company",
+        tasks: []
+    }];
 
     static PROJECTS_TECHNOLOGIES = ["Java", "iOS", "JavaScript"]
 
@@ -391,17 +400,11 @@ export default class Constants {
         imageLight: LinkedInLight,
         alternative: 'linkedin-logo'
     }, {
-        title: 'Facebook',
+        title: 'Twitter',
         link: 'https://twitter.com/abenzaggagh',
         image: Twitter,
         imageLight: TwitterLight,
         alternative: 'twitter-logo'
-    }, {
-        title: 'Facebook',
-        link: 'https://facebook.com/abenzaggagh',
-        image: Facebook,
-        imageLight: FacebookLight,
-        alternative: 'facebook-logo'
     }, {
         title: 'Mail',
         link: 'mailto:amine.benzaggagh@icloud.com',
