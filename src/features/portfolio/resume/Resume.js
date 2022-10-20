@@ -1,6 +1,4 @@
-import './SkillsExperiences.scss';
-
-import { FormattedMessage } from "react-intl";
+import './Resume.scss';
 
 import SquareButton from "../../../shared/buttons/square-btn/SquareButton";
 
@@ -8,15 +6,45 @@ import Constants from "../../../shared/utils/Constants";
 
 import Skills from "./Skills/Skills";
 import Experiences from "./Experience/Experiences";
+import {FormattedMessage} from "react-intl";
+import React, {useEffect, useState} from "react";
+import {Locale} from "../../../shared/utils/Languages";
+import {collection, getDocs} from "firebase/firestore";
+import Firestore from "../../../utils/firestore";
 
-export default function SkillsExperiences() {
+export default function Resume() {
+
+    const currentLanguage = Locale;
+
+    const [experiences, setExperiences] = useState([]);
+    const [isLoading, setLoading] = useState(true);
+
+    const fetchExperiences = async() => {
+        const querySnapshot = await getDocs(collection(Firestore, "Experiences"));
+        querySnapshot.forEach((doc) => {
+            setExperiences(experiences => [...experiences,  {...{"id" : doc.id}, ...doc.data() }]);
+        });
+        setLoading(false);
+    }
+
+    useEffect(() => {
+        fetchExperiences().then();
+    }, []);
+
+    useEffect(() => { }, [isLoading]);
+
+
     return (
         <>
             <div className={"container"}>
 
-                <Skills title={"skills_title"} skills={Constants.LIST_OF_SKILLS} />
+                <h1 className={'align-left'}>
+                    <FormattedMessage id="resume" defaultMessage={`${Constants.RESUME}`} />
+                </h1>
 
-                <Experiences title={"experience_title"} experiences={Constants.LIST_OF_EXPERIENCES} />
+                <Experiences title={"experience_title"} experiences={/*Constants.LIST_OF_EXPERIENCES*/experiences} />
+
+                <Skills title={"skills_title"} skills={Constants.LIST_OF_SKILLS} />
 
                 <div className={"row mt-5 mb-4"}>
                     <div className={"col-6"}>

@@ -43,6 +43,7 @@
     "projects": "Projects",
     "profile": "Profile",
     "skills": "Skills",
+    "resume": "Resume",
     "blog": "Blog",
 
     "english": "English",
@@ -51,38 +52,4 @@
 
     "under_construction": "This website is still under construction!",
 
-    "exp_1_from_date": "November 2021",
-    "exp_1_to_date": "Present",
-    "exp_1_role": "Software Engineer",
-    "exp_1_company": "Orange Business Services",
-    "exp_1_task_1": "Requirement analysis. Quantification, designing, developing of evolutions and new features.",
-    "exp_1_task_2": "Developing unit and integration tests.",
-    "exp_1_task_3": "Participation in actions to maintain operational conditions and continuous improvement.",
-    "exp_1_task_4": "Incident management and analysis, correction of anomalies, code improvement and version upgrades.",
-
-
-    "exp_2_from_date": "September 2020",
-    "exp_2_to_date": "November 2021",
-    "exp_2_role": "Research and Design Engineer",
-    "exp_2_company": "Docaposte",
-    "exp_2_task_1": "Requirement analysis. Quantification, designing, developing of evolutions and new features.",
-    "exp_2_task_2": "Developing unit and integration tests.",
-    "exp_2_task_3": "Participation in actions to maintain operational conditions and continuous improvement.",
-    "exp_2_task_4": "Incident management and analysis, correction of anomalies, code improvement and version upgrades.",
-
-
-    "exp_3_from_date": "February 2020",
-    "exp_3_to_date": "August 2020",
-    "exp_3_role": "Full-Stack Developer Intern",
-    "exp_3_company": "Docaposte",
-    "exp_3_task_1": "Developing a Back Office interface for tracking the procedures and displaying statistics.",
-    "exp_3_task_2": "Developing GitLab CI/CD pipelines using GitLab Runners.",
-    "exp_3_task_3": "Developing Payment Auditing unit asynchronous using Spring Event, Spring AOP.",
-
-
-    "exp_4_from_date": "February 2020",
-    "exp_4_to_date": "August 2020",
-    "exp_4_role": "Full-Stack Developer Intern",
-    "exp_4_company": "Direction de la Coopération et du Partenariat"
-    
 }

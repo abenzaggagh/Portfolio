@@ -8,7 +8,7 @@ import Home from "./home/Home";
 import Blog from "./blog/Blog";
 import Projects from "./projects/Projects";
 import Profile from "./profile/Profile";
-import SkillsExperiences from "./skills/SkillsExperiences";
+import Resume from "./resume/Resume";
 
 import Header from "../../shared/header/Header";
 import Overlay from "../../shared/overlay/Overlay";
@@ -54,8 +54,8 @@ export default function Portfolio() {
                     <Route path="/profile">
                         <Profile />
                     </Route>
-                    <Route path="/skills">
-                        <SkillsExperiences />
+                    <Route path="/resume">
+                        <Resume />
                     </Route>
 
                     <Route path="/auth">

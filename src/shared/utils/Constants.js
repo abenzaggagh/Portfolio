@@ -74,7 +74,7 @@ export default class Constants {
     static HOME = "Home";
     static PROJECTS = "Skills";
     static PROFILE = "Profile";
-    static SKILLS = "Skills";
+    static RESUME = "Resume";
     static BLOG = "Blog";
 
     static ENGLISH = "English";
@@ -102,9 +102,9 @@ export default class Constants {
         link: 'profile',
         default: Constants.PROFILE
     }, {
-        id: 'skills',
-        link: 'skills',
-        default: Constants.SKILLS
+        id: 'resume',
+        link: 'resume',
+        default: Constants.RESUME
     }, {
         id: 'blog',
         link: 'blog',

@@ -4,12 +4,13 @@
 .exp-date {
     // font-weight: 700;
     // font-size:: 28px;
+    display: inline-flex;
 }
 
 .exp-title {
-    // font-size:: 28px;
     letter-spacing: -0.5px;
-    font-weight: 400;
+    font-size: 2.5vh;
+    font-weight: 600;
 }
 
 .exp-subtitle {
@@ -20,4 +21,12 @@
 
 ul li {
     color: $textColor;
+}
+
+span {
+    color: $textColor;
+}
+
+.spacer {
+    margin: 0 10px;
 }

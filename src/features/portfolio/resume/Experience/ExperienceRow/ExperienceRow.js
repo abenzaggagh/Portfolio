@@ -1,34 +1,37 @@
 import './ExperienceRow.scss';
 import {FormattedMessage} from "react-intl";
 
+import {Locale} from "../../../../../shared/utils/Languages";
+
 export default function ExperienceRow(props) {
     return (<>
         <div className={"row mb-3"}>
             <div className={"col-sm-3"}>
-                <p className={"exp-date"}>
-                    <FormattedMessage id={`${props.experience.fromDate}`} defaultMessage={`${props.experience.fromDate}`} /> - &nbsp;
-                    <FormattedMessage id={`${props.experience.toDate}`} defaultMessage={`${props.experience.toDate}`} />
-                </p>
+                <div className={"exp-date"}>
+                    <p>{props.experience.from[Locale]}</p>
+                    <span className={'spacer'}>-</span>
+                    <p>{props.experience.to[Locale]}</p>
+                </div>
             </div>
             <div className={"col-sm-3"}>
                 <p className={"exp-title"}>
-                    <FormattedMessage id={`${props.experience.role}`} defaultMessage={`${props.experience.role}`} />
+                    {props.experience.role[Locale]}
                 </p>
 
                 {props.experience.project &&
                     <p className={"exp-subtitle"}>
-                        <FormattedMessage id={`${props.experience.project}`} defaultMessage={`${props.experience.project}`} />
+                        {props.experience.project}
                     </p>
                 }
                 <p className={"exp-subtitle"}>
-                    <FormattedMessage id={`${props.experience.company}`} defaultMessage={`${props.experience.company}`} />
+                    {props.experience.company}
                 </p>
             </div>
             <div className={"col-sm-6"}>
                 <ul>
                     { props.experience.tasks.map(task => <li>
                         <p className={"exp-body"}>
-                            <FormattedMessage id={`${task}`} defaultMessage={`${task}`} />
+                            {task[Locale]}
                         </p>
                     </li>) }
                 </ul>

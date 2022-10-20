@@ -38,6 +38,7 @@
     "projects": "Projets",
     "profile": "Profile",
     "skills": "Compétences",
+    "resume": "Resumé",
     "blog": "Blog",
 
     "english": "Anglais",
@@ -45,27 +46,5 @@
     "arabic": "Arabe",
 
     "under_construction": "Ce site internet est toujours en construction!",
-
-    "exp_1_from_date": "September 2020",
-    "exp_1_to_date": "November 2021",
-    "exp_1_role": "Research and Design Engineer",
-    "exp_1_company": "Docaposte",
-    "exp_1_task_1": "Requirement analysis. Quantification, designing, developing of evolutions and new features.",
-    "exp_1_task_2": "Developing unit and integration tests.",
-    "exp_1_task_3": "Participation in actions to maintain operational conditions and continuous improvement.",
-    "exp_1_task_4": "Incident management and analysis, correction of anomalies, code improvement and version upgrades.",
-
-    "exp_2_from_date": "February 2020",
-    "exp_2_to_date": "August 2020",
-    "exp_2_role": "Full-Stack Developer Intern",
-    "exp_2_company": "Docaposte",
-    "exp_2_task_1": "Developing a Back Office interface for tracking the procedures and displaying statistics.",
-    "exp_2_task_2": "Developing GitLab CI/CD pipelines using GitLab Runners.",
-    "exp_2_task_3": "Developing Payment Auditing unit asynchronous using Spring Event, Spring AOP.",
-
-    "exp_3_from_date": "February 2020",
-    "exp_3_to_date": "August 2020",
-    "exp_3_role": "Full-Stack Developer Intern",
-    "exp_3_company": "Direction de la Coopération et du Partenariat"
 
 }

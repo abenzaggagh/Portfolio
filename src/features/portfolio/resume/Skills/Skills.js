@@ -4,7 +4,7 @@ import { FormattedMessage } from "react-intl";
 
 export default function Skills(props) {
     return (<>
-            <div className={""}>
+            <div className={"mt-5"}>
                 <h1 className="title">
                     <FormattedMessage id={`${props.title}`} defaultMessage={""} />
                 </h1>
