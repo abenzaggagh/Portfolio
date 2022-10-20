@@ -20,6 +20,7 @@ export default function Profile() {
     const currentLanguage = Locale;
 
     const [books, setBooks] = useState([]);
+    const [timelines, setTimelines] = useState([]);
     const [isLoading, setLoading] = useState(true);
 
     const fetchBooks = async() => {
@@ -30,8 +31,17 @@ export default function Profile() {
         setLoading(false);
     }
 
+    const fetchTimelines = async() => {
+        const querySnapshot = await getDocs(collection(Firestore, "BriefHistory"));
+        querySnapshot.forEach((doc) => {
+            setTimelines(timelines => [...timelines,  {...{"id" : doc.id}, ...doc.data() }]);
+        });
+        setLoading(false);
+    }
+
     useEffect(() => {
         fetchBooks().then();
+        fetchTimelines().then();
     }, []);
 
     useEffect(() => { }, [isLoading]);
@@ -53,45 +63,15 @@ export default function Profile() {
     }
 
     const TimeLineElements = () => {
-        return timelineElements.map(timelineElement => <>
+        return timelines.sort((a, b) => b.position - a.position).map(timelineElement => <>
             <VerticalTimelineElement
                 className="vertical-timeline-element--work"
                 date={`${timelineElement.from} - ${timelineElement.to}`}>
-                <p className="vertical-timeline-element-title">{timelineElement.position} {timelineElement.junction} <a href={timelineElement.link}>{timelineElement.entity}</a></p>
-                <p className="vertical-timeline-element-subtitle">{timelineElement.location}</p>
+                <p className="vertical-timeline-element-title">{timelineElement.title[currentLanguage]} <a href={timelineElement.link}>{timelineElement.entity}</a></p>
+                <p className="vertical-timeline-element-subtitle">{timelineElement.location[currentLanguage]}</p>
             </VerticalTimelineElement>
         </>);
     }
-
-    const timelineElements = [{
-        position: 'Software Engineer',
-        junction: 'at',
-        from: 'Nov 2021', to: 'Present',
-        link: 'https://www.orange-business.com/fr',
-        entity: 'Orange Business Services',
-        location: 'Rabat, Maroc'
-    }, {
-        position: 'Research & Development Engineer',
-        junction: 'at',
-        from: 'Sep 2020', to: 'Nov 2021',
-        link: 'https://docaposte.fr',
-        entity: 'Docaposte',
-        location: 'Casablanca, Maroc'
-    }, {
-        position: 'Research & Development Intern',
-        junction: 'at',
-        from: 'Feb 2020', to: 'Aug 2021',
-        link: 'https://docaposte.fr',
-        entity: 'Docaposte',
-        location: 'Casablanca, Maroc'
-    }, {
-        position: 'Graduated',
-        junction: 'from',
-        from: 'Sep 2017', to: 'June 2020',
-        link: 'http://ensias.um5.ac.ma/',
-        entity: 'ENSIAS',
-        location: 'Rabat, Maroc'
-    }];
 
     const line = defineMessages({
         line2: {

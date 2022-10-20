@@ -5,6 +5,7 @@ import React, {useEffect, useState} from "react";
 import {OverlayTrigger, Popover} from "react-bootstrap";
 
 export default function SquareCard(props) {
+
     let popover;
 
     if (props.quote) {
@@ -15,9 +16,7 @@ export default function SquareCard(props) {
         </Popover>);
     } else {
         popover = (<>
-            <Popover id="popover-trigger-hover-focus" title="Popover top">
-
-            </Popover>
+            <Popover id="popover-trigger-hover-focus" title="Popover top"></Popover>
         </>)
     }
 
@@ -35,7 +34,7 @@ export default function SquareCard(props) {
                 </div>
 
                 <div className={"card-body mt-2"}>
-                    <h4 className={"card-title"}>{props.title}</h4>
+                    <p className={"card-title"}>{props.title}</p>
                     <p className={"card-text"}>{props.author}</p>
                 </div>
 
