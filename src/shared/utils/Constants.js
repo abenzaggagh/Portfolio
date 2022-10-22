@@ -10,9 +10,6 @@ import TwitterLight from '../../assets/images/footer/light/twitter.svg';
 import LinkedIn from '../../assets/images/footer/dark/linkedin.svg';
 import LinkedInLight from '../../assets/images/footer/light/linkedin.svg';
 
-import Facebook from '../../assets/images/footer/dark/facebook.svg';
-import FacebookLight from '../../assets/images/footer/light/facebook.svg';
-
 import MEMOJI from '../../assets/images/Image.png';
 import NOT_FOUND_MEMOJI from '../../assets/images/NotFound.png';
 
@@ -353,59 +350,31 @@ export default class Constants {
         }
     ];
 
-    static LIST_OF_EXPERIENCES = [{
-        fromDate: "exp_1_from_date",
-        toDate: "exp_1_to_date",
-        role: "exp_1_role",
-        company: "exp_1_company",
-        tasks: [
-            "exp_1_task_1", "exp_1_task_2", "exp_1_task_3", "exp_1_task_4"
-        ]
-    }, {
-        fromDate: "exp_2_from_date",
-        toDate: "exp_2_to_date",
-        role: "exp_2_role",
-        company: "exp_2_company",
-        tasks: [
-            "exp_2_task_1", "exp_2_task_2", "exp_2_task_3", "exp_2_task_4"
-        ]
-    },  {
-        fromDate: "exp_3_from_date",
-        toDate: "exp_3_to_date",
-        role: "exp_3_role",
-        company: "exp_3_company",
-        tasks: [
-            "exp_3_task_1", "exp_3_task_2", "exp_3_task_3"
-        ]
-    }, {
-        fromDate: "exp_4_from_date",
-        toDate: "exp_4_to_date",
-        role: "exp_4_role",
-        company: "exp_4_company",
-        tasks: []
-    }];
-
     static PROJECTS_TECHNOLOGIES = ["Java", "iOS", "JavaScript"]
 
-    static FOOTER = [{
+    static FOOTER = [
+    {
         title: 'GitHub',
         link: 'https://github.com/abenzaggagh',
         image: GitHub,
         imageLight: GitHubLight,
         alternative: 'github-logo'
-    }, {
+    },
+    {
         title: 'LinkedIn',
         link: 'https://linkedin.com/in/abenzaggagh',
         image: LinkedIn,
         imageLight: LinkedInLight,
         alternative: 'linkedin-logo'
-    }, {
+    },
+    {
         title: 'Twitter',
         link: 'https://twitter.com/abenzaggagh',
         image: Twitter,
         imageLight: TwitterLight,
         alternative: 'twitter-logo'
-    }, {
+    },
+    {
         title: 'Mail',
         link: 'mailto:amine.benzaggagh@icloud.com',
         image: Mail,

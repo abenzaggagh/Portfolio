@@ -25,6 +25,7 @@
     "profile_6_line": " I really enjoyed working with them. At the same time, sometimes I had to put my work first, and make sure that I completed what I needed to do. So, I would say that they would describe me as disciplined, but friendly and supportive..",
 
     "skills_title": "Skills",
+    "education_title": "Education",
     "experience_title": "Experiences",
 
     "skills_front_end_title": "Front-End Engineering",
@@ -50,6 +51,6 @@
     "french": "French",
     "arabic": "Arabic",
 
-    "under_construction": "This website is still under construction!",
+    "under_construction": "This website is still under construction!"
 
 }

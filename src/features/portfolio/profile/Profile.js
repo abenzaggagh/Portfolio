@@ -83,7 +83,7 @@ export default function Profile() {
     return (
         <div className={'container'}>
             <h1 className={'align-left'}>
-                <FormattedMessage id="profile" defaultMessage={`${Constants.PROFILE}`} />!
+                <FormattedMessage id="profile" defaultMessage={`${Constants.PROFILE}`} />
             </h1>
 
             <div className={"row"}>

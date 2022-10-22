@@ -8,16 +8,23 @@ import Skills from "./Skills/Skills";
 import Experiences from "./Experience/Experiences";
 import {FormattedMessage} from "react-intl";
 import React, {useEffect, useState} from "react";
-import {Locale} from "../../../shared/utils/Languages";
 import {collection, getDocs} from "firebase/firestore";
 import Firestore from "../../../utils/firestore";
+import Education from "./Education/Education";
 
 export default function Resume() {
 
-    const currentLanguage = Locale;
-
+    const [educations, setEducations] = useState([]);
     const [experiences, setExperiences] = useState([]);
     const [isLoading, setLoading] = useState(true);
+
+    const fetchEducations = async() => {
+        const querySnapshot = await getDocs(collection(Firestore, "Educations"));
+        querySnapshot.forEach((doc) => {
+            setEducations(educations => [...educations,  {...{"id" : doc.id}, ...doc.data() }]);
+        });
+        setLoading(false);
+    }
 
     const fetchExperiences = async() => {
         const querySnapshot = await getDocs(collection(Firestore, "Experiences"));
@@ -28,11 +35,11 @@ export default function Resume() {
     }
 
     useEffect(() => {
+        fetchEducations().then();
         fetchExperiences().then();
     }, []);
 
     useEffect(() => { }, [isLoading]);
-
 
     return (
         <>
@@ -42,19 +49,14 @@ export default function Resume() {
                     <FormattedMessage id="resume" defaultMessage={`${Constants.RESUME}`} />
                 </h1>
 
-                <Experiences title={"experience_title"} experiences={/*Constants.LIST_OF_EXPERIENCES*/experiences} />
+                <Experiences title={"experience_title"} experiences={experiences} />
+
+                <Education title={"education_title"} educations={educations} />
 
                 <Skills title={"skills_title"} skills={Constants.LIST_OF_SKILLS} />
 
-                <div className={"row mt-5 mb-4"}>
-                    <div className={"col-6"}>
-                        <SquareButton isFile={true}
-                                      style={"raise"}
-                                      title={"Resume"}
-                                      defaultTitle={""}
-                                      link={"https://firebasestorage.googleapis.com/v0/b/abenzaggagh.appspot.com/o/Curriculum%20vitae%2FAmine%20BEN%20ZAGGAGH%20-%20Resume.pdf?alt=media&token=acdb0871-8432-45ff-b457-6128d45c9b4e"} />
-                    </div>
-                    <div className={"col-6"}>
+                <div className={"row mt-5 mb-5"}>
+                    <div className={"col"}>
                         <SquareButton isFile={true}
                                       style={"raise"}
                                       title={"Curriculum vitae"}

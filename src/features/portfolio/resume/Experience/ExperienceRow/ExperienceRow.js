@@ -1,5 +1,4 @@
 import './ExperienceRow.scss';
-import {FormattedMessage} from "react-intl";
 
 import {Locale} from "../../../../../shared/utils/Languages";
 
@@ -8,9 +7,9 @@ export default function ExperienceRow(props) {
         <div className={"row mb-3"}>
             <div className={"col-sm-3"}>
                 <div className={"exp-date"}>
-                    <p>{props.experience.from[Locale]}</p>
+                    <p className={"m-0"}>{props.experience.from[Locale]}</p>
                     <span className={'spacer'}>-</span>
-                    <p>{props.experience.to[Locale]}</p>
+                    <p className={"m-0"}>{props.experience.to[Locale]}</p>
                 </div>
             </div>
             <div className={"col-sm-3"}>

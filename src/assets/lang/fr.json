@@ -20,6 +20,7 @@
     "profile_4_line": "J'aime programmer \uD83D\uDC68\u200D\uD83D\uDCBB, voyager, jouer aux fléchettes \uD83C\uDFAF et lire des livres!",
 
     "skills_title": "Compétences",
+    "education_title": "Éducation",
     "experience_title": "Expériences",
 
     "skills_front_end_title": "Front-End Engineering",
@@ -45,6 +46,6 @@
     "french": "Français",
     "arabic": "Arabe",
 
-    "under_construction": "Ce site internet est toujours en construction!",
+    "under_construction": "Ce site internet est toujours en construction!"
 
 }

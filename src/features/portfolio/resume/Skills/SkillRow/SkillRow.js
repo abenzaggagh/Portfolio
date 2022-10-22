@@ -11,7 +11,7 @@ export default function SkillRow(props) {
                 </h3>
             </div>
 
-            {props.skill_subtitle &&
+            { props.skill_subtitle &&
                 <div className={"mt-3"}>
                     <p>
                         <FormattedMessage id={`${props.skill_subtitle}`} defaultMessage={""} />
@@ -19,7 +19,7 @@ export default function SkillRow(props) {
                 </div>
             }
 
-            {props.skills &&
+            { props.skills &&
                 <div className={"mt-3"}>
                     <div className={"row"}>
                         {props.skills.map(skill => <>
