@@ -11,9 +11,13 @@ import { collection, getDocs } from "firebase/firestore";
 
 import Constants from "../../../shared/utils/Constants";
 
+import * as _ from 'lodash';
 
 export default function Projects() {
+
     const [projects, setProjects] = useState([]);
+
+    const chunkedProjects = _.chunk(projects, 3);
 
     useEffect(() => {
         fetchProjects().then();
@@ -39,22 +43,19 @@ export default function Projects() {
                     </p>
                 </div>
 
-                {/* <div className={"row mt-4"}>
-                    { Constants.PROJECTS_TECHNOLOGIES.map(technology =>
-                        <div className={"col"}>
-                            <button className={""}>{ technology }</button>
-                        </div>
+                <div className={"fluid-container m-1 scroll-bounce"}>
+                    { chunkedProjects.map((listProjects, index) =>
+                        (<div className={'row'}>
+                            { listProjects.map(project => <ProjectRow key={index}
+                                                                  id={project.id}
+                                                                  link={project.link}
+                                                                  cover={project.cover}
+                                                                  title={project.title}
+                                                                  preview={project.preview}
+                                                                  description={project.description} />)}
+                        </div>)
                     )}
-                </div> */}
 
-                <div className={"fluid-container m-5 scroll-bounce"}>
-                    { projects.map(project => <ProjectRow key={project.id}
-                                                          id={project.id}
-                                                          link={project.link}
-                                                          cover={project.cover}
-                                                          title={project.title}
-                                                          preview={project.preview}
-                                                          description={project.description} />)}
                 </div>
             </div>
         </>);

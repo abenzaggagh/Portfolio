@@ -4,7 +4,7 @@ import {Locale} from "../../../../../shared/utils/Languages";
 
 export default function ExperienceRow(props) {
     return (<>
-        <div className={"row mb-3"}>
+        <div className={"row mb-3 exp-row"}>
             <div className={"col-sm-3"}>
                 <div className={"exp-date"}>
                     <p className={"m-0"}>{props.experience.from[Locale]}</p>
@@ -35,6 +35,7 @@ export default function ExperienceRow(props) {
                     </li>) }
                 </ul>
             </div>
+            <hr className="separator" />
         </div>
     </>);
 }

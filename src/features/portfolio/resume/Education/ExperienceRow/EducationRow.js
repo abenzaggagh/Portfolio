@@ -27,6 +27,7 @@ export default function EducationRow(props) {
                     {props.education.description && props.education.description[Locale]}
                 </p>
             </div>
+            <hr className="separator" />
         </div>
     </>);
 }

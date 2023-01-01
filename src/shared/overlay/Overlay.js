@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React  from "react";
 import { Link } from "react-router-dom";
 import { FormattedMessage } from 'react-intl';
 
@@ -31,7 +31,7 @@ export default function Overlay({ overlay, closeOverlay }) {
                     {
                         overlayButtons.map((item, i) =>
                             (<div className="large-btn" key={i}>
-                                <Link onClick={handleClick} to={`${item.link}`}>
+                                <Link onClick={handleClick} to={`../${item.link}`} replace>
                                     <FormattedMessage id={item.id} defaultMessage={`${item.default}`} />
                                 </Link>
                             </div>))

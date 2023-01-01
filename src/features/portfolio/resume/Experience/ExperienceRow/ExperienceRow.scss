@@ -14,8 +14,6 @@
 }
 
 .exp-subtitle {
-    // font-size:: 24px;
-    // font-weight: 300;
     margin: 10px auto;
 }
 
@@ -25,4 +23,9 @@ ul li {
 
 span {
     color: $textColor;
+}
+
+.separator {
+    margin: 20px auto;
+    border-top: 3px solid #bbb;
 }

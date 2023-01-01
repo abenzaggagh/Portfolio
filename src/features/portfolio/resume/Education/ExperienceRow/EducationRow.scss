@@ -30,3 +30,19 @@ span {
 .spacer {
     margin: 0 10px;
 }
+
+
+
+
+@media only screen and (max-width: 578px) {
+
+    .exp-row {
+        padding: 0 15px;
+    }
+
+    .exp-date {
+        margin: 5px 0 10px 0;
+        flex-direction: row;
+    }
+
+}

@@ -125,6 +125,13 @@ a {
 
 }
 
+@media only screen and (max-width: 578px) {
+
+	.container {
+		padding: 0 10px;
+	}
+}
+
 /**
  *
  * iPhone 5/SE - Width dimensions

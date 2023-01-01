@@ -1,7 +1,11 @@
 @import '../../../../assets/styles/Variables.scss';
 
 .project-row {
-  padding: 30px;
+  display:flex;
+  flex-wrap:wrap;
+  flex-direction:row;
+  align-content: center !important;
+  justify-content: center !important;
   cursor: pointer;
   margin-bottom: 25px;
   border-radius: 16px;
@@ -33,7 +37,21 @@
   }
 }
 
+.project-card {
+  // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  height: auto;
+  margin: 0;
+  padding: 0 !important;
+  text-align:center;
+  overflow: hidden;
+}
 
+.caption{
+  position:relative;
+  height:40%;
+  padding:10px;
+}
 
 .project-disabled {
   color: gray;

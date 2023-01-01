@@ -50,8 +50,9 @@ p {
     box-shadow: 0 0 0 4px $textColor !important;
 }
 
-
-
+.memoji {
+    height: unset;
+}
 
 .align-left {
     text-align: start;

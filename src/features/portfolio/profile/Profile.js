@@ -62,6 +62,21 @@ export default function Profile() {
         }
     }
 
+    const CurrentlyListening = () => {
+        if (isLoading) {
+            return (<div className="spinner-grow" role="status">
+                <span className="visually-hidden">Loading</span>
+            </div>)
+        } else {
+            return books.map(book =>
+                <>
+                    <div className={"col"}>
+                        <SquareCard key={book.id} cover={book.cover} title={book.title} author={book.author} quote={book.quote}/>
+                    </div>
+                </>);
+        }
+    }
+
     const TimeLineElements = () => {
         return timelines.sort((a, b) => b.position - a.position).map(timelineElement => <>
             <VerticalTimelineElement
