@@ -1,10 +1,10 @@
 import './ProjectDetails.scss';
 
-import React, {useEffect, useState} from "react";
-import {useHistory, useParams} from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { useHistory, useParams } from "react-router-dom";
 import { doc, getDoc} from "firebase/firestore";
 import Firestore from "../../../../utils/firestore";
-import {Locale} from "../../../../shared/utils/Languages";
+import { Locale } from "../../../../shared/utils/Languages";
 
 import Tag from "../../../../shared/tag/Tag";
 
@@ -48,7 +48,7 @@ export default function ProjectDetails() {
             <div className={"row mt-5"}>
                 { projectDetails.screens && projectDetails.screens.map(screen =>
                     (<div className={"col-4"}>
-                        <img src={screen} alt={"DEFAULT IMAGE"}/>
+                        <img className={'image'} src={screen} alt={"DEFAULT IMAGE"}/>
                     </div>))
                 }
             </div>

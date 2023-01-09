@@ -55,7 +55,10 @@ import Discipline from "../../assets/images/soft-skills/discipline.svg"
 
 export default class Constants {
 
-    static MY_AGE = new Date().getFullYear() - 1998;
+    static MY_AGE = (new Date().getMonth() <= 2) ?
+            ((new Date().getDay() < 14) ? new Date().getFullYear() - 1999 : new Date().getFullYear() - 1998)
+            :
+            new Date().getFullYear() - 1998;
 
     static SUN = SUN;
     static MOON = MOON;
@@ -349,8 +352,6 @@ export default class Constants {
             ]
         }
     ];
-
-    static PROJECTS_TECHNOLOGIES = ["Java", "iOS", "JavaScript"]
 
     static FOOTER = [
     {

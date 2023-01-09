@@ -7,9 +7,9 @@ export default function ProjectRow(props) {
     <>
         <div className={"col mt-2 mb-4 m-5 project-row"}>
             <div className={'project-card'}>
-                <div className={''}>
+                <div className={'project-cover'}>
                     <Link to={`project/${props.id}`}>
-                        <img style={{width: "100%"}} src={props.cover} alt={"DEFAULT IMAGE"}/>
+                        <img className={'project-cover'} src={props.cover} alt={"DEFAULT IMAGE"}/>
                     </Link>
                 </div>
                 <div className={'caption'}>

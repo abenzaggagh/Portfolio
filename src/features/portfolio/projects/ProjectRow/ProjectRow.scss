@@ -37,8 +37,12 @@
   }
 }
 
+.project-cover {
+  max-height: 300px;
+  padding: 10px;
+}
+
 .project-card {
-  // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 300px;
   height: auto;
   margin: 0;
@@ -47,7 +51,7 @@
   overflow: hidden;
 }
 
-.caption{
+.caption {
   position:relative;
   height:40%;
   padding:10px;
