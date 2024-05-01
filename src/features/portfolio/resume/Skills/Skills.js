@@ -1,3 +1,4 @@
+import React from "react";
 import SkillRow from "./SkillRow/SkillRow";
 
 import { FormattedMessage } from "react-intl";

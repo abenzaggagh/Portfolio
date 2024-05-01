@@ -16,7 +16,7 @@ import Footer from "../../shared/footer/Footer";
 import NotFound from "../../shared/notFound/NotFound";
 import ProjectDetails from "./projects/ProjectDetails/ProjectDetails";
 
-import Auth from "./auth/Auth";
+
 
 export default function Portfolio() {
 
@@ -56,10 +56,6 @@ export default function Portfolio() {
                     </Route>
                     <Route path="/resume">
                         <Resume />
-                    </Route>
-
-                    <Route path="/auth">
-                        <Auth />
                     </Route>
 
                     <Route path='*' exact={true} component={NotFound} />

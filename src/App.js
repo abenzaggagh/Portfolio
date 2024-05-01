@@ -38,7 +38,7 @@ export default function App() {
     return (
         <ThemeContext.Provider value={[theme, setTheme]}>
                 <Bubbles />
-                {isAuth ?  <PrivatePortfolio /> : <Portfolio />}
+                <Portfolio />
         </ThemeContext.Provider>
     );
 }

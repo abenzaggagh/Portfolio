@@ -1,3 +1,5 @@
+import React from "react";
+
 import './SkillIcon.scss';
 
 export default function SkillIcon(props) {

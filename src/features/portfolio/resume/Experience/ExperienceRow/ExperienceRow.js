@@ -1,3 +1,4 @@
+import React from "react";
 import './ExperienceRow.scss';
 
 import {Locale} from "../../../../../shared/utils/Languages";

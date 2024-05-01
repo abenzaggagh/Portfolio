@@ -1,3 +1,4 @@
+import React from "react";
 import './Blog.scss';
 
 import {FormattedMessage} from "react-intl";

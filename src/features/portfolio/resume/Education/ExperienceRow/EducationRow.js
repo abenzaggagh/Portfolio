@@ -1,3 +1,4 @@
+import React from "react";
 import './EducationRow.scss';
 
 import {Locale} from "../../../../../shared/utils/Languages";
